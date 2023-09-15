@@ -1,7 +1,3 @@
-# FUM-Simurgh
-
-Simurgh is your intelligent chatbot companion designed to assist Ferdowsi University of Mashhad students in finding answers to their educational and administrative queries. With Simurgh's help, navigating the university's academic landscape becomes effortless. Whether you're seeking course information, registration guidance, or campus resources, Simurgh is your trusted ally on the path to academic success.
-
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -89,7 +85,7 @@ Simurgh is your intelligent chatbot companion designed to assist Ferdowsi Univer
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Simurgh is your intelligent chatbot companion designed to assist Ferdowsi University of Mashhad students in finding answers to their educational and administrative queries. With Simurgh's help, navigating the university's academic landscape becomes effortless. Whether you're seeking course information, registration guidance, or campus resources, Simurgh is your trusted ally on the path to academic success.
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
