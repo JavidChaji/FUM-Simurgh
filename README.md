@@ -155,6 +155,13 @@ This is an example of how to list things you need to use the software and how to
       sudo npm install -g meteor --unsafe-perm
       ```
 
+3. install yarn
+
+    - Install yarn for arch linux
+      ```sh
+      sudo pacman -S yarn
+      ```
+
 ---
 
 ### Installation
