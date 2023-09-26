@@ -137,19 +137,19 @@ This is an example of how to list things you need to use the software and how to
       ```sh
       node -v
       ```
-    
+
     - If your node version was not 14
       ```sh
       sudo n 14.0.0
       ```
-  
+
 2. you must have meteor
 
     - install meteor
       ```sh
       npm install -g meteor
       ```
-    
+
     - If having problem with installing
       ```sh
       sudo npm install -g meteor --unsafe-perm
@@ -161,6 +161,7 @@ This is an example of how to list things you need to use the software and how to
       ```sh
       sudo pacman -S yarn
       ```
+
 4. 
 ---
 
