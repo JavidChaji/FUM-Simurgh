@@ -142,13 +142,18 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   sudo n 14.0.0
   ```
----  
+  
+* install meteor
+  ```sh
+  npm install -g meteor
+  ```
 
+* If having problem with installing
+  ```sh
+  sudo npm install -g meteor --unsafe-perm
+  ```
 
-
-
-
-
+---
 
 
 
