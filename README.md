@@ -146,14 +146,14 @@ This is an example of how to list things you need to use the software and how to
 2. you must have meteor
 
     - install meteor
-    ```sh
-    npm install -g meteor
-    ```
+      ```sh
+      npm install -g meteor
+      ```
     
     - If having problem with installing
-    ```sh
-    sudo npm install -g meteor --unsafe-perm
-    ```
+      ```sh
+      sudo npm install -g meteor --unsafe-perm
+      ```
 
 ---
 
