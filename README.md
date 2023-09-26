@@ -133,6 +133,21 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
+* Check the Node version and make sure it's 14
+  ```sh
+  node -v
+  ```
+
+* If your node version was not 14
+  ```sh
+  sudo n 14.0.0
+  ```
+  
+
+
+
+
+
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Get a free API Key at [https://example.com](https://example.com)
