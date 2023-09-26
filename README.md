@@ -152,6 +152,7 @@ This is an example of how to list things you need to use the software and how to
 
     - If having problem with installing
       ```sh
+      sudo npm install --global yarn 
       sudo npm install -g meteor --unsafe-perm
       ```
 
