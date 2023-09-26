@@ -140,7 +140,7 @@ This is an example of how to list things you need to use the software and how to
 
     - If your node version was not 14
       ```sh
-      sudo n 14.0.0
+      sudo n 14.21.3
       ```
 
 2. you must have meteor
