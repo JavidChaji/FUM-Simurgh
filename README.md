@@ -171,13 +171,13 @@ This is an example of how to list things you need to use the software and how to
 
 6. **Starting Rocket.Chat:**
 
-```bash
-yarn dev # run all packages
-```
-OR
-```bash
-yarn dsv # run only meteor (front and back) with pre-built packages
-```
+    ```bash
+    yarn dev # run all packages
+    ```
+    OR
+    ```bash
+    yarn dsv # run only meteor (front and back) with pre-built packages
+    ```
 
 ---
 
