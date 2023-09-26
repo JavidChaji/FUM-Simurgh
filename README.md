@@ -131,31 +131,32 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
 1. You must have node version 14
 
-  * Check the Node version and make sure it's 14
+  - Check the Node version and make sure it's 14
     ```sh
     node -v
     ```
   
-  * If your node version was not 14
+  - If your node version was not 14
     ```sh
     sudo n 14.0.0
     ```
 2. you must have meteor
 
-  * install meteor
+  - install meteor
     ```sh
     npm install -g meteor
     ```
   
-  * If having problem with installing
+  - If having problem with installing
     ```sh
     sudo npm install -g meteor --unsafe-perm
     ```
 
 ---
+
+### Installation
 
 
 
