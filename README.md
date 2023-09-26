@@ -163,7 +163,7 @@ This is an example of how to list things you need to use the software and how to
       ```
 
 4. Clone the repo
-    - Clone this repo: `git clone https://github.com/RocketChat/Rocket.Chat.git`
+    - Clone this repo: `git clone https://github.com/JavidChaji/FUM-Simurgh.git`
 ---
 
 ### Installation
