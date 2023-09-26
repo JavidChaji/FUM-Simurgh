@@ -152,7 +152,7 @@ This is an example of how to list things you need to use the software and how to
 
     - If having problem with installing
       ```sh
-      sudo npm install --global yarn 
+      curl https://install.meteor.com/\?release\=2.13.3 | sh
       sudo npm install -g meteor --unsafe-perm
       ```
 
@@ -160,6 +160,7 @@ This is an example of how to list things you need to use the software and how to
 
     - Install yarn for arch linux
       ```sh
+      sudo npm install --global yarn 
       sudo pacman -S yarn
       ```
 
