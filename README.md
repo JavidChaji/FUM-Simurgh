@@ -226,7 +226,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Javid Chaji - [@JavidChaji](https://twitter.com/JavidChaji) - email@example.com
+Javid Chaji - [@JavidChaji](https://twitter.com/JavidChaji) - javid.chaji@gmail.com
 
 Project Link: [FUM-Simurgh](https://github.com/JavidChaji/FUM-Simurgh)
 
