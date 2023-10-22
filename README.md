@@ -195,21 +195,18 @@ To get a local copy up and running follow these simple example steps.
 
 these steps are for linux
 
-1. So We Install Python Version 3.10 in the virtual environment 
-
+1. So We Install Python Version 3.10 in the virtual environment
     ```sh
     python3.10 -m venv .venv
     ```
-we can move to the virtual environment by:
-
-    ```sh
-    source .venv/bin/activate
-    ```
-after moving to virtual environment we check if our python version are correct
-
-    ```sh
-    python -V
-    ```
+    - we can move to the virtual environment by:
+        ```sh
+        source .venv/bin/activate
+        ```
+    - after moving to virtual environment we check if our python version are correct
+        ```sh
+        python -V
+        ```
 
 ### Installation
 
