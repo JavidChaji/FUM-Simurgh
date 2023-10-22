@@ -193,7 +193,7 @@ To get a local copy up and running follow these simple example steps.
 > Currently, rasa supports the following Python versions: 3.7, 3.8, 3.9 and 3.10. Note that Python 3.10 is only supported for versions 3.4.x and upwards. Additionally, rasa installation on Apple Silicon with Python 3.10 is not functional in 3.4.x but will be supported starting from 3.5.x.
 
 
-1. You must have Python Version 3.10 Or 
+1. So We Install Python Version 3.10 in the virtual environment 
 
   ```sh
   python3.10 -m venv .venv
