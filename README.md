@@ -224,6 +224,18 @@ these steps are for linux
         ```sh
         python -m pip install --upgrade pip rasa
         ```
+
+    - so to see switches of rasa we can use
+
+        ```sh
+        python -m rasa --help
+        ```
+    - to initiate ower rasa project we use this command (rasa will be asking you some questions and then you should be fine)
+
+        ```sh
+        python -m rasa --init
+        ```
+        
         
 ### Installation
 
