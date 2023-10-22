@@ -213,6 +213,12 @@ these steps are for linux
         python -V
         ```
 
+    -and also make sure pip is installed
+
+        ```sh
+        pip -V
+        ```
+        
 ### Installation
 
 
