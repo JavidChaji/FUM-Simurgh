@@ -197,19 +197,19 @@ these steps are for linux
 
 1. So We Install Python Version 3.10 in the virtual environment
 
-    ```sh
+    ```bash
     python3.10 -m venv .venv
     ```
     
     - we can move to the virtual environment by:
 
-        ```sh
+        ```bash
         source .venv/bin/activate
         ```
 
     - after moving to virtual environment we check if our python version are correct
 
-        ```sh
+        ```bash
         python -V
         ```
 
