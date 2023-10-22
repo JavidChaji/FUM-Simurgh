@@ -218,6 +218,12 @@ these steps are for linux
         ```sh
         pip -V
         ```
+
+    - Install Rasa and Upgrade pip
+
+        ```sh
+        python -m pip install --upgrade pip rasa
+        ```
         
 ### Installation
 
