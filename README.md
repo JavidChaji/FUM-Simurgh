@@ -187,14 +187,9 @@ To get a local copy up and running follow these simple example steps.
 
 #### Rasa Prerequisites
 
-> [!IMPORTANT]  
-> The buy-binds layout in CS2 has changed. Be aware that you should modify the in-game loadout as indicated.
-
-> [!NOTE]  
-> The crosshair is designed for a 1920x1080 resolution; in other case, the experience may vary.
-
 > [!WARNING]  
 > PYTHON3 SUPPORTED VERSIONS
+> 
 > Currently, rasa supports the following Python versions: 3.7, 3.8, 3.9 and 3.10. Note that Python 3.10 is only supported for versions 3.4.x and upwards. Additionally, rasa installation on Apple Silicon with Python 3.10 is not functional in 3.4.x but will be supported starting from 3.5.x.
 
 
