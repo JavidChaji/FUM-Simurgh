@@ -174,11 +174,11 @@ To get a local copy up and running follow these simple example steps.
 
 6. **Starting Rocket.Chat:**
 
-    ```bash
+    ```sh
     yarn dev # run all packages
     ```
     OR
-    ```bash
+    ```sh
     yarn dsv # run only meteor (front and back) with pre-built packages
     ```
 
@@ -197,19 +197,19 @@ these steps are for linux
 
 1. So We Install Python Version 3.10 in the virtual environment
 
-    ```bash
+    ```sh
     python3.10 -m venv .venv
     ```
     
     - we can move to the virtual environment by:
 
-        ```bash
+        ```sh
         source .venv/bin/activate
         ```
 
     - after moving to virtual environment we check if our python version are correct
 
-        ```bash
+        ```sh
         python -V
         ```
 
