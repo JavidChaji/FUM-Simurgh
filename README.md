@@ -283,7 +283,7 @@ Rasa bot can be started via the Docker or Rasa CLI.
 
     ```python
     cd bot_rasa
-    rasa run
+    rasa run --enable-api --debug
     ```
 
 #### 5. Make Rasa Bot accessible by Rocket.Chat
@@ -296,8 +296,8 @@ The Rasa bot should be reachable via Rocket.Chat.
     ```
     
 
-* If you are trying to connect to a standalone Rocker.Chat instance or using Rasa CLI, lets user ngrok to get a 
-public url for the Rasa Bot.
+* If you are trying to connect to a standalone Rocket.Chat instance or using Rasa CLI, lets user ngrok to get a 
+public url for the Rasa Bot. (or just use localhost:5005)
 
     Install ngrok via: https://ngrok.com/download
 
