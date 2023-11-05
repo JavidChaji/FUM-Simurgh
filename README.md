@@ -346,7 +346,7 @@ URLs: http://ngrok_public_url/webhooks/rocketchat/webhook
 Type `@bot_rasa hello` to start a conversation with the Rasa bot
 ![example]
 
-[example]: rasa_bot_example.png
+[example]: Images/rasa_bot_example.png
 
 
 ### Additional Information
