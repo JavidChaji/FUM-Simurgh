@@ -37,7 +37,7 @@
   <h3 align="center">Simurgh</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Your Educational Chatbot for Ferdowsi University of Mashhad
     <br />
     <a href="https://github.com/JavidChaji/FUM-Simurgh"><strong>Explore the docs »</strong></a>
     <br />
