@@ -1,28 +1,11 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][Contributors-Shield]][Contributors-URL]
 [![Forks][Forks-Shield]][Forks-URL]
 [![Stargazers][Stars-Shield]][Stars-URL]
 [![Issues][Issues-Shield]][Issues-URL]
 [![MIT License][License-Shield]][License-URL]
+
 [![LinkedIn][LinkedIn-Shield]][LinkedIn-URL]
 
 
@@ -94,7 +77,6 @@ Simurgh is your intelligent chatbot companion designed to assist Ferdowsi Univer
 ### Built With
 
 Technologies and Tools Utilized in this Project
-
 
 * [![Python][Python-Shield]][Python-URL]
 
@@ -363,9 +345,6 @@ Post as: bot_rasa
 
 
 
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -424,34 +403,50 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+<!-- Contributors -->
 [Contributors-Shield]: https://img.shields.io/github/contributors/JavidChaji/FUM-Simurgh.svg?style=for-the-badge
+
 [Contributors-URL]: https://github.com/JavidChaji/FUM-Simurgh/graphs/contributors
 
 
+<!-- Forks -->
 [Forks-Shield]: https://img.shields.io/github/forks/JavidChaji/FUM-Simurgh.svg?style=for-the-badge
+
 [Forks-URL]: https://github.com/JavidChaji/FUM-Simurgh/network/members
 
 
+<!-- Stars -->
 [Stars-Shield]: https://img.shields.io/github/stars/JavidChaji/FUM-Simurgh.svg?style=for-the-badge
+
 [Stars-URL]: https://github.com/JavidChaji/FUM-Simurgh/stargazers
 
 
+<!-- Issues -->
 [Issues-Shield]: https://img.shields.io/github/issues/JavidChaji/FUM-Simurgh.svg?style=for-the-badge
+
 [Issues-URL]: https://github.com/JavidChaji/FUM-Simurgh/issues
 
 
+<!-- License -->
 [License-Shield]: https://img.shields.io/github/license/JavidChaji/FUM-Simurgh.svg?style=for-the-badge
+
 [License-URL]: https://github.com/JavidChaji/FUM-Simurgh/blob/master/LICENSE.txt
 
 
+<!-- LinkedIn -->
 [LinkedIn-Shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
 [LinkedIn-URL]: https://linkedin.com/in/JavidChaji
 
 
-[Product-Screenshot]: Images/Screenshot.png
-[Product-URL]: .
-
-
+<!-- Python -->
 [Python-Shield]: https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue
+
 [Python-URL]: https://nextjs.org/
 
+
+<!-- Product -->
+[Product-Screenshot]: Images/Screenshot.png
+
+[Product-URL]: .
