@@ -89,7 +89,9 @@ Technologies and Tools Utilized in this Project
 
 ### Prerequisites
 
-#### Rocket.Chat Prerequisites
+<details>
+  <summary><h4> Rocket.Chat Prerequisites </h4></summary>
+
 
 * npm
   ```sh
@@ -147,9 +149,11 @@ Technologies and Tools Utilized in this Project
     ```
 
 ---
+</details>
 
+<details>
+  <summary><h4> Rasa Prerequisites </h4></summary>
 
-#### Rasa Prerequisites
 
 > [!WARNING]  
 > PYTHON3 SUPPORTED VERSIONS
@@ -199,7 +203,11 @@ these steps are for linux
         ```sh
         python -m rasa --init
         ```
-    - to setup our connection between rasa and rocket.chat
+</details>
+
+<details>
+  <summary><h4> Rasa and Rocket.Chat Connection </h4></summary>
+  
 ### 2. Rocket.Chat Bot User Configurations
 
 Create a Rasa bot user in Rocket.Chat. You can either manually login to Rocket.Chat and create a bot user via the 
@@ -339,7 +347,8 @@ Channel: all_direct_messages
 URLs: http://bot_rasa:5005/webhooks/rocketchat/webhook
 Post as: bot_rasa
 ```
-        
+</details>
+
         
 ### Installation
 
