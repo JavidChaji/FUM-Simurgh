@@ -154,10 +154,7 @@ Technologies and Tools Utilized in this Project
 <details>
   <summary><h4> Rasa Prerequisites </h4></summary>
 
-> <picture>
->   <source media="(prefers-color-scheme: light)" srcset="https://github.com/Mqxx/GitHub-Markdown/blob/main/blockquotes/badge/light-theme/warning.svg">
->   <img alt="Warning" src="https://github.com/Mqxx/GitHub-Markdown/blob/main/blockquotes/badge/dark-theme/warning.svg">
-> </picture><br>
+> [!WARNING]  
 > PYTHON3 SUPPORTED VERSIONS
 > 
 > Currently, rasa supports the following Python versions: 3.7, 3.8, 3.9 and 3.10. Note that Python 3.10 is only supported for versions 3.4.x and upwards. Additionally, rasa installation on Apple Silicon with Python 3.10 is not functional in 3.4.x but will be supported starting from 3.5.x.
