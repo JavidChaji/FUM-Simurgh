@@ -1,0 +1,91 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      سلام
+    intent: greet
+  - action: utter_greet
+  - user: |
+      عالیه
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      سلام
+    intent: greet
+  - action: utter_greet
+  - user: |
+      عالیه
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      خدانگهدار!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      سلام
+    intent: greet
+  - action: utter_greet
+  - user: |
+      خوب نیست
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      بله
+    intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - user: |
+      سلام
+    intent: greet
+  - action: utter_greet
+  - user: |
+      خوب نیست
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      نه واقعاً
+    intent: deny
+  - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - user: |
+      سلام
+    intent: greet
+  - action: utter_greet
+  - user: |
+      به شدت بد
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      نه
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      خداحافظ
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      آیا تو یک ربات هستی؟
+    intent: bot_challenge
+  - action: utter_iamabot

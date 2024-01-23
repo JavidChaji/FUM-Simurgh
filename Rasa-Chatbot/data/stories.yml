@@ -1,0 +1,675 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+# Chapter 1
+
+# Set of Academic Rules and Regulations
+
+# Definitions
+
+# 1
+- story: what is definition of vezarat
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_vezarat
+  - action: utter_what_is_definition_of_vezarat
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 2
+- story: what is definition of daneshgah
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_daneshgah
+  - action: utter_what_is_definition_of_daneshgah
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 3
+- story: what is definition of modares
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_modares
+  - action: utter_what_is_definition_of_modares
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 4  
+- story: what is definition of daneshjou
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_daneshjou
+  - action: utter_what_is_definition_of_daneshjou
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 5
+- story: what is definition of amouzeshe rayegan
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_amouzeshe_rayegan
+  - action: utter_what_is_definition_of_amouzeshe_rayegan
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 6
+- story: what is definition of daneshjoue shahriehpardaz
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_daneshjoue_shahriehpardaz
+  - action: utter_what_is_definition_of_daneshjoue_shahriehpardaz
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 7
+- story: what is definition of hozouri
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_hozouri
+  - action: utter_what_is_definition_of_hozouri
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 8
+- story: what is definition of gheire hozouri
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_gheire_hozouri
+  - action: utter_what_is_definition_of_gheire_hozouri
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 9
+- story: what is definition of nimeh hozouri
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_nimeh_hozouri
+  - action: utter_what_is_definition_of_nimeh_hozouri
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 10
+- story: what is definition of ostad rahnamaye tahsili
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_ostad_rahnamaye_tahsili
+  - action: utter_what_is_definition_of_ostad_rahnamaye_tahsili
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 11
+- story: what is definition of nimsale tahsili
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_definition_of_nimsale_tahsili
+  - action: utter_what_is_definition_of_nimsale_tahsili
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 12
+- story: what is definition of doreh tabestani
+  steps:
+  - intent: what_is_definition_of_doreh_tabestani
+  - action: utter_what_is_definition_of_doreh_tabestani
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 13
+- story: what is definition of barnameh darsi
+  steps:
+  - intent: what_is_definition_of_barnameh_darsi
+  - action: utter_what_is_definition_of_barnameh_darsi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 14
+- story: what is definition of vahed darsi
+  steps:
+  - intent: what_is_definition_of_vahed_darsi
+  - action: utter_what_is_definition_of_vahed_darsi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 15
+- story: what is definition of darse jobrani
+  steps:
+  - intent: what_is_definition_of_darse_jobrani
+  - action: utter_what_is_definition_of_darse_jobrani
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 16
+- story: what is definition of darse pishniaz
+  steps:
+  - intent: what_is_definition_of_darse_pishniaz
+  - action: utter_what_is_definition_of_darse_pishniaz
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 17
+- story: what is definition of mashrooti
+  steps:
+  - intent: what_is_definition_of_mashrooti
+  - action: utter_what_is_definition_of_mashrooti
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 18
+- story: what is definition of reshteh tahsili
+  steps:
+  - intent: what_is_definition_of_reshteh_tahsili
+  - action: utter_what_is_definition_of_reshteh_tahsili
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 19
+- story: what is definition of gerayesh tahsili
+  steps:
+  - intent: what_is_definition_of_gerayesh_tahsili
+  - action: utter_what_is_definition_of_gerayesh_tahsili
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 20
+- story: what is definition of morakhasi tahsili
+  steps:
+  - intent: what_is_definition_of_morakhasi_tahsili
+  - action: utter_what_is_definition_of_morakhasi_tahsili
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 21
+- story: what is definition of enserafe tahsili
+  steps:
+  - intent: what_is_definition_of_enserafe_tahsili
+  - action: utter_what_is_definition_of_enserafe_tahsili
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 22
+- story: what is definition of doreh kardani peyvasteh
+  steps:
+  - intent: what_is_definition_of_doreh_kardani_peyvasteh
+  - action: utter_what_is_definition_of_doreh_kardani_peyvasteh
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 23
+- story: what is definition of doreh kardani napeyvasteh
+  steps:
+  - intent: what_is_definition_of_doreh_kardani_napeyvasteh
+  - action: utter_what_is_definition_of_doreh_kardani_napeyvasteh
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 24
+- story: what is definition of doreh karshenasi peyvasteh
+  steps:
+  - intent: what_is_definition_of_doreh_karshenasi_peyvasteh
+  - action: utter_what_is_definition_of_doreh_karshenasi_peyvasteh
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 25
+- story: what is definition of doreh karshenasi napeyvasteh
+  steps:
+  - intent: what_is_definition_of_doreh_karshenasi_napeyvasteh
+  - action: utter_what_is_definition_of_doreh_karshenasi_napeyvasteh
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 26
+- story: what is definition of doreh karshenasi arshad
+  steps:
+  - intent: what_is_definition_of_doreh_karshenasi_arshad
+  - action: utter_what_is_definition_of_doreh_karshenasi_arshad
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 27
+- story: what is definition of doreh doctoraye takhasosi
+  steps:
+  - intent: what_is_definition_of_doreh_doctoraye_takhasosi
+  - action: utter_what_is_definition_of_doreh_doctoraye_takhasosi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 28
+- story: what is definition of doreh beynolmelali
+  steps:
+  - intent: what_is_definition_of_doreh_beynolmelali
+  - action: utter_what_is_definition_of_doreh_beynolmelali
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 29
+- story: what is definition of paayannameh
+  steps:
+  - intent: what_is_definition_of_paayannameh
+  - action: utter_what_is_definition_of_paayannameh
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 30
+- story: what is definition of azmon jame
+  steps:
+  - intent: what_is_definition_of_azmon_jame
+  - action: utter_what_is_definition_of_azmon_jame
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 31
+- story: what is definition of resaleh
+  steps:
+  - intent: what_is_definition_of_resaleh
+  - action: utter_what_is_definition_of_resaleh
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 32
+- story: what is definition of heyat daavaran
+  steps:
+  - intent: what_is_definition_of_heyat_daavaran
+  - action: utter_what_is_definition_of_heyat_daavaran
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 33
+- story: what is definition of shiveh amozeshi
+  steps:
+  - intent: what_is_definition_of_shiveh_amozeshi
+  - action: utter_what_is_definition_of_shiveh_amozeshi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 34
+- story: what is definition of shiveh amozeshi
+  steps:
+  - intent: what_is_definition_of_shiveh_amozeshi
+  - action: utter_what_is_definition_of_shiveh_amozeshi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 35
+- story: what is definition of ostad raahnama
+  steps:
+  - intent: what_is_definition_of_ostad_raahnama
+  - action: utter_what_is_definition_of_ostad_raahnama
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 36
+- story: what is definition of ostad moshaver
+  steps:
+  - intent: what_is_definition_of_ostad_moshaver
+  - action: utter_what_is_definition_of_ostad_moshaver
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 37
+- story: what is definition of motekhases herfehei
+  steps:
+  - intent: what_is_definition_of_motekhases_herfehei
+  - action: utter_what_is_definition_of_motekhases_herfehei
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+# 38
+- story: what is definition of gorouh azmayeshi
+  steps:
+  - intent: what_is_definition_of_gorouh_azmayeshi
+  - action: utter_what_is_definition_of_gorouh_azmayeshi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 39
+- story: what is definition of gorouh amouzeshi
+  steps:
+  - intent: what_is_definition_of_gorouh_amouzeshi
+  - action: utter_what_is_definition_of_gorouh_amouzeshi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 40
+- story: what is definition of shooraye amoozeshi daneshgah
+  steps:
+  - intent: what_is_definition_of_shooraye_amoozeshi_daneshgah
+  - action: utter_what_is_definition_of_shooraye_amoozeshi_daneshgah
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# 41
+- story: what is definition of danesh amoukhteh
+  steps:
+  - intent: what_is_definition_of_danesh_amoukhteh
+  - action: utter_what_is_definition_of_danesh_amoukhteh
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# General subjects (related to all academic levels)
+
+# Article 3
+- story: university entry requirements
+  steps:
+  - intent: university_entry_requirements
+  - action: utter_university_entry_requirements
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 1
+- story: talent admission regulations
+  steps:
+  - intent: talent_admission_regulations
+  - action: utter_talent_admission_regulations
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 2
+- story: transfer regulations for students abroad
+  steps:
+  - intent: transfer_regulations_for_students_abroad
+  - action: utter_transfer_regulations_for_students_abroad
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 3
+- story: foreign language ability for PhD students
+  steps:
+  - intent: foreign_language_ability_for_PhD_students
+  - action: utter_foreign_language_ability_for_PhD_students
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 4
+- story: persian language ability foreign student
+  steps:
+  - intent: persian_language_ability_foreign_student
+  - action: utter_persian_language_ability_foreign_student
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 4
+- story: education system in university
+  steps:
+  - intent: education_system_in_university
+  - action: utter_education_system_in_university
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+# Subsection 1
+- story: non persian language courses in university
+  steps:
+  - intent: non_persian_language_courses_in_university
+  - action: utter_non_persian_language_courses_in_university
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 5
+- story: authorized courses in university
+  steps:
+  - intent: authorized_courses_in_university
+  - action: utter_authorized_courses_in_university
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 1
+- story: virtual courses in bachelors degree
+  steps:
+  - intent: virtual_courses_in_bachelors_degree
+  - action: utter_virtual_courses_in_bachelors_degree
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 6
+- story: attendance in classes is required
+  steps:
+  - intent: attendance_in_classes_is_required
+  - action: utter_attendance_in_classes_is_required
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 1
+- story: absence policy for students with continuous grades
+  steps:
+  - intent: absence_policy_for_students_with_continuous_grades
+  - action: utter_absence_policy_for_students_with_continuous_grades
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 2
+- story: student with continuous grade can miss final exam
+  steps:
+  - intent: student_with_continuous_grade_can_miss_final_exam
+  - action: utter_student_with_continuous_grade_can_miss_final_exam
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 3
+- story: course waiver for justifiable absence
+  steps:
+  - intent: course_waiver_for_justifiable_absence
+  - action: utter_course_waiver_for_justifiable_absence
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 7
+- story: course sequence is determined by group
+  steps:
+  - intent: course_sequence_is_determined_by_group
+  - action: utter_course_sequence_is_determined_by_group
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 1
+- story:  course sequence policy is not applicable for last semester student
+  steps:
+  - intent: course_sequence_policy_is_not_applicable_for_last_semester_student
+  - action: utter_course_sequence_policy_is_not_applicable_for_last_semester_student
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 8
+- story: end of semester exam is required for theoretical courses
+  steps:
+  - intent: end_of_semester_exam_is_required_for_theoretical_courses
+  - action: utter_end_of_semester_exam_is_required_for_theoretical_courses
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 1
+- story: course grade is unchangeable after professor approval
+  steps:
+  - intent: course_grade_is_unchangeable_after_professor_approval
+  - action: utter_course_grade_is_unchangeable_after_professor_approval
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 9
+- story: free education is limited to one major
+  steps:
+  - intent: free_education_is_limited_to_one_major
+  - action: utter_free_education_is_limited_to_one_major
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 1
+- story: student can drop one theoretical course before exams
+  steps:
+  - intent: student_can_drop_one_theoretical_course_before_exams
+  - action: utter_student_can_drop_one_theoretical_course_before_exams
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 2
+- story: cost of withdrawing from classes for free education students
+  steps:
+  - intent: cost_of_withdrawing_from_classes_for_free_education_students
+  - action: utter_cost_of_withdrawing_from_classes_for_free_education_students
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 10
+- story: semester withdrawal details
+  steps:
+  - intent: semester_withdrawal_details
+  - action: utter_semester_withdrawal_details
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 11
+- story: withdrawal from studies procedure
+  steps:
+  - intent: withdrawal_from_studies_procedure
+  - action: utter_withdrawal_from_studies_procedure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+# Subsection 1
+- story: withdrawal from studies policy for paying students
+  steps:
+  - intent: withdrawal_from_studies_policy_for_paying_students
+  - action: utter_withdrawal_from_studies_policy_for_paying_students
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 12
+- story: consequences of not choosing units for students
+  steps:
+  - intent: consequences_of_not_choosing_units_for_students
+  - action: utter_consequences_of_not_choosing_units_for_students
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 13
+- story: return to studies policy for withdrawn students
+  steps:
+  - intent: return_to_studies_policy_for_withdrawn_students
+  - action: utter_return_to_studies_policy_for_withdrawn_students
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+# Article 14
+- story: decision making authority for educational affairs
+  steps:
+  - intent: decision_making_authority_for_educational_affairs
+  - action: utter_decision_making_authority_for_educational_affairs
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy

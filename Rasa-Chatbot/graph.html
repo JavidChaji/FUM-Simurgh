@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_greet];
+2 [class="", fontsize=12, label=utter_what_is_definition_of_amouzeshe_rayegan];
+3 [class="", fontsize=12, label=utter_did_that_help];
+4 [class="", fontsize=12, label=utter_happy];
+6 [class="", fontsize=12, label=utter_what_is_definition_of_daneshjoue_shahriehpardaz];
+10 [class="", fontsize=12, label=utter_what_is_definition_of_hozouri];
+14 [class="", fontsize=12, label=utter_what_is_definition_of_gheire_hozouri];
+18 [class="", fontsize=12, label=utter_what_is_definition_of_nimeh_hozouri];
+22 [class="", fontsize=12, label=utter_what_is_definition_of_ostad_rahnamaye_tahsili];
+26 [class="", fontsize=12, label=utter_what_is_definition_of_nimsale_tahsili];
+29 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_tabestani];
+32 [class="", fontsize=12, label=utter_what_is_definition_of_barnameh_darsi];
+35 [class="", fontsize=12, label=utter_what_is_definition_of_vahed_darsi];
+38 [class="", fontsize=12, label=utter_what_is_definition_of_darse_jobrani];
+41 [class="", fontsize=12, label=utter_what_is_definition_of_darse_pishniaz];
+44 [class="", fontsize=12, label=utter_what_is_definition_of_mashrooti];
+47 [class="", fontsize=12, label=utter_what_is_definition_of_reshteh_tahsili];
+50 [class="", fontsize=12, label=utter_what_is_definition_of_gerayesh_tahsili];
+53 [class="", fontsize=12, label=utter_what_is_definition_of_morakhasi_tahsili];
+56 [class="", fontsize=12, label=utter_what_is_definition_of_enserafe_tahsili];
+59 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_kardani_peyvasteh];
+62 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_kardani_napeyvasteh];
+65 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_karshenasi_peyvasteh];
+68 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_karshenasi_napeyvasteh];
+71 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_karshenasi_arshad];
+74 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_doctoraye_takhasosi];
+77 [class="", fontsize=12, label=utter_what_is_definition_of_doreh_beynolmelali];
+80 [class="", fontsize=12, label=utter_what_is_definition_of_paayannameh];
+83 [class="", fontsize=12, label=utter_what_is_definition_of_azmon_jame];
+86 [class="", fontsize=12, label=utter_what_is_definition_of_resaleh];
+89 [class="", fontsize=12, label=utter_what_is_definition_of_heyat_daavaran];
+92 [class="", fontsize=12, label=utter_what_is_definition_of_shiveh_amozeshi];
+97 [class="", fontsize=12, label=utter_what_is_definition_of_ostad_raahnama];
+100 [class="", fontsize=12, label=utter_what_is_definition_of_ostad_moshaver];
+103 [class="", fontsize=12, label=utter_what_is_definition_of_motekhases_herfehei];
+106 [class="", fontsize=12, label=utter_what_is_definition_of_gorouh_azmayeshi];
+109 [class="", fontsize=12, label=utter_what_is_definition_of_gorouh_amouzeshi];
+112 [class="", fontsize=12, label=utter_what_is_definition_of_shooraye_amoozeshi_daneshgah];
+115 [class="", fontsize=12, label=utter_what_is_definition_of_danesh_amoukhteh];
+118 [class="", fontsize=12, label=utter_university_entry_requirements];
+121 [class="", fontsize=12, label=utter_talent_admission_regulations];
+124 [class="", fontsize=12, label=utter_transfer_regulations_for_students_abroad];
+128 [class="", fontsize=12, label=utter_cheer_up];
+131 [class="", fontsize=12, label=utter_foreign_language_ability_for_PhD_students];
+134 [class="", fontsize=12, label=utter_persian_language_ability_foreign_student];
+137 [class="", fontsize=12, label=utter_education_system_in_university];
+140 [class="", fontsize=12, label=utter_non_persian_language_courses_in_university];
+143 [class="", fontsize=12, label=utter_authorized_courses_in_university];
+146 [class="", fontsize=12, label=utter_virtual_courses_in_bachelors_degree];
+149 [class="", fontsize=12, label=utter_attendance_in_classes_is_required];
+152 [class="", fontsize=12, label=utter_absence_policy_for_students_with_continuous_grades];
+155 [class="", fontsize=12, label=utter_student_with_continuous_grade_can_miss_final_exam];
+158 [class="", fontsize=12, label=utter_course_waiver_for_justifiable_absence];
+163 [class="", fontsize=12, label=utter_did_that_help];
+164 [class="", fontsize=12, label=utter_goodbye];
+165 [class="", fontsize=12, label=utter_course_sequence_is_determined_by_group];
+168 [class="", fontsize=12, label=utter_course_sequence_policy_is_not_applicable_for_last_semester_student];
+171 [class="", fontsize=12, label=utter_end_of_semester_exam_is_required_for_theoretical_courses];
+174 [class="", fontsize=12, label=utter_course_grade_is_unchangeable_after_professor_approval];
+177 [class="", fontsize=12, label=utter_free_education_is_limited_to_one_major];
+180 [class="", fontsize=12, label=utter_student_can_drop_one_theoretical_course_before_exams];
+183 [class="", fontsize=12, label=utter_cost_of_withdrawing_from_classes_for_free_education_students];
+186 [class="", fontsize=12, label=utter_semester_withdrawal_details];
+189 [class="", fontsize=12, label=utter_withdrawal_from_studies_procedure];
+192 [class="", fontsize=12, label=utter_withdrawal_from_studies_policy_for_paying_students];
+196 [class="", fontsize=12, label=utter_what_is_definition_of_vezarat];
+199 [class="", fontsize=12, label=utter_consequences_of_not_choosing_units_for_students];
+202 [class="", fontsize=12, label=utter_return_to_studies_policy_for_withdrawn_students];
+205 [class="", fontsize=12, label=utter_decision_making_authority_for_educational_affairs];
+209 [class="", fontsize=12, label=utter_what_is_definition_of_daneshgah];
+213 [class="", fontsize=12, label=utter_what_is_definition_of_modares];
+217 [class="", fontsize=12, label=utter_what_is_definition_of_daneshjou];
+220 [class="", fontsize=12, label="..."];
+223 [class="", fontsize=12, label=utter_iamabot];
+224 [class=intent, fillcolor=lightblue, label=hhola, shape=rect, style=filled];
+225 [class=intent, fillcolor=lightblue, label="دوره تابستانی: دوره زمانی كه شامل 6 هفته آموزش و 1 هفته امتحانات پایانی است.", shape=rect, style=filled];
+226 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+227 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+228 [class=intent, fillcolor=lightblue, label="درس جبرانی: درس/ دروسی كه با تایید گروه گذراندن آن در آغاز دوره تحصیلی مربوط برای رفع كمبود دانش یا مهارت دانشجو ضروری تشخیص داده میشود و یا به دلیل ارتباط با موضوع پایان‌نامه/ رساله، به تشخیص استاد راهنما، موظف به گذراندن آن است. درس جبرانی باید از مقطع قبلی باشد ولی نمره قبولی در آن درس یا دروس بر اساس مقطع فعلی دانشجو است.", shape=rect, style=filled];
+229 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+230 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+231 [class=intent, fillcolor=lightblue, label="رشته تحصیلی: یک شاخه فرعی از شاخه‌های علمی كه به لحاظ موضوع دارای قلمرو مشخص و متمایز از سایر شاخه‌های علمی است و به احراز دانش تخصصی، مهارت یا كارآمدی معینی می‌انجامد.", shape=rect, style=filled];
+232 [class=intent, fillcolor=lightblue, label="گرایش تحصیلی: هر كدام ازشاخه های یک رشته تحصیلی كه ناظر بر تخصص آن باشد. اختلاف دروس در 2 گرایش از یک رشته نباید از 7 درصد كل واحدهای رشته كمتر و از 30 درصد كل واحدها بیشتر باشد.", shape=rect, style=filled];
+233 [class=intent, fillcolor=lightblue, label="مرخصی تحصیلی: مدت زمان مشخصی كه دانشجو برابر ضوابط معین به طور موقت به تحصیل اشتغال ندارد.", shape=rect, style=filled];
+234 [class=intent, fillcolor=lightblue, label="انصراف تحصیلی: فرآیندی كه در آن دانشجو به طور اختیاری از ادامه تحصیل خودداری میكند.", shape=rect, style=filled];
+235 [class=intent, fillcolor=lightblue, label="دوره کاردانی پیوسته: دوره تحصیلی كه دارندگان مدرم دیپلم (در نظام آموزشی دارای پیش‌دانشگاهی بدون نیاز به گذراندن دوره پیش‌دانشگاهی) به آن وارد می‌شوند و مستلزم گذراندن حداقل 68 واحد درسی طبق برنامه مصوب است.", shape=rect, style=filled];
+236 [class=intent, fillcolor=lightblue, label="دوره کاردانی ناپیوسته: دوره تحصیلی پس از دوره متوسطه، كه فرد پس از اخذ دیپلم و گذراندن دوره پیش‌دانشگاهی (در نظام آموزشی دارای پیش‌دانشگاهی) به آن وارد می‌شود و مستلزم گذراندن حداقل 68 واحد درسی طبق برنامه مصوب است.", shape=rect, style=filled];
+237 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+238 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+239 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+240 [class=intent, fillcolor=lightblue, label="دوره دکتری تخصصی: دوره تحصیلی كه پس از دوره كارشناسی ارشد یا دكتری عمومی آغاز شده و دانشجو موظف به گذراندن 36 واحد درسی مشتمل بر رساله میباشد.", shape=rect, style=filled];
+241 [class=intent, fillcolor=lightblue, label="دوره بین‌المللی: هر یک از دوره‌های تخصصی دكتری كه بر اساس ضوابط مصوب وزارت و با مشاركت مؤسسه‌های آموزش عالی و پژوهشی غیر ایرانی برگزار می‌شود. این دوره می تواند آموزشی-پژوهشی و یا پژوهش محور باشد.", shape=rect, style=filled];
+242 [class=intent, fillcolor=lightblue, label="پایان‌نامه: مستند علمی است كه در فرآیند تحصیل دانشجوی دوره كارشناسی ارشد و از طریق تحقیق در یک حوزه معین از رشته یا گرایش تحصیلی و با راهنمایی استاد(ان) راهنما و مشاور حسب مورد براساس استانداردهای پژوهشی تدوین می‌شود.", shape=rect, style=filled];
+243 [class=intent, fillcolor=lightblue, label="آزمون جامع: آزمون تخصصی است كه پس از گذراندن واحدهای دوره آموزشی در دوره دكتری تخصصی، با هدف ارزشیابی آموخته های آموزشی و توانمندی های پژوهشی دانشجو برگزار می‌شود.", shape=rect, style=filled];
+244 [class=intent, fillcolor=lightblue, label="رساله: گزارش مکتوب حاصل از فعالیت پژوهشی دانشجوی دوره دكتری تخصصی است كه در زمینه مشخصی از یک رشته تحصیلی و با راهنمایی استاد(ان) راهنما و مشاور تدوین می‌شود.", shape=rect, style=filled];
+245 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+246 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+247 [class=intent, fillcolor=lightblue, label="استاد راهنما: عضو هیأت علمی دارای مدرک دكتری تخصصی(D.Ph) كه مسئولیت راهنمایی دانشجو را در انجام پایان‌نامه/رساله بر عهده دارد.", shape=rect, style=filled];
+248 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+249 [class=intent, fillcolor=lightblue, label="متخصص حرفه‌ای: صاحب نظر یا كارشناس باتجربه غیرهیات علمی با مدرک تحصیلی دكتری تخصصی(D.Ph) در سایر بخش‌های جامعه كه دارای مهارت و صلاحیت حرفه‌ای مورد تایید شورای تحصیلات تکمیلی گروه می‌باشد. در شرایط خاص، در پایان‌نامه‌های تقاضامحور یا كاربردی مقطع كارشناسی ارشد استفاده از متخصصان حرفه‌ای با مدرک كارشناسی ارشد و همچنین مربی باسابقه دانشگاه فردوسی مشهد در سمت مشاور پایان‌نامه بلامانع است.", shape=rect, style=filled];
+250 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+251 [class=intent, fillcolor=lightblue, label="گروه آموزشی: بنیادی‌ترین واحد سازمانی دانشگاهی، متشکل از تعدادی عضو هیأت علمی با تخصص مشترک در یک رشته علمی خاص یا چند رشته / های متجانس كه به منظور ایجاد و اجرای آن رشته تحصیلی در دانشگاه تشکیل می‌شود.", shape=rect, style=filled];
+252 [class=intent, fillcolor=lightblue, label="شورای آموزشی دانشگاه: یکی از شوراهای تخصصی در نخستین سطح سیاست گذاری و برنامه‌ریزی راهبردی در امور آموزشی و تحصیلات تکمیلی دانشگاه است كه به منظور ایجاد هماهنگی و تسهیل در امور اجرایی مرتبط با تحصیل دانشجو به ریاست معاون آموزشی دانشگاه تشکیل می‌شود. شورای آموزشی دانشگاه می‌تواند اختیارات مشخص شده در این شیوه‌نامه را به دانشکده یا كمیته منتخب شورای آموزشی تفویض كند.", shape=rect, style=filled];
+253 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+254 [class=intent, fillcolor=lightblue, label="ماده ۳- شرط ورود به دانشگاه دارا بودن مدرکِ پایانِ دوره قبلی است كه باید مورد تایید وزارت علوم، تحقیقات و فنّاوری یا وزارت بهداشت، درمان و آموزش پزشکی باشد. علاوه بر آن، شایستگی‌های عمومی و اختصاصی از طریق قبولی قطعی در آزمون ورودی و یا كسب پذیرش از دانشگاه طبق مقررات مصوب وزارت احراز خواهد شد.", shape=rect, style=filled];
+255 [class=intent, fillcolor=lightblue, label="تبصره ۱- پذیرش دانشجویانِ مشمول مقررات استعدادهای درخشان طبق مصوبات شورای هدایت استعدادهای درخشان وزارت انجام می‌شود.", shape=rect, style=filled];
+256 [class=intent, fillcolor=lightblue, label="تبصره ۲- دانشجوی ایرانی مشغول به تحصیل در موسسه خارج از كشور می‌تواند مطابق آیین‌نامه وزارتی انتقال دانشجویان از خارج به داخل، جهت ادامه تحصیل به دانشگاه منتقل شود.", shape=rect, style=filled];
+257 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+258 [class=intent, fillcolor=lightblue, label="تبصره ۴- دانشجوی غیر ایرانی پذیرش شده، در بدو ورود، ملزم به كسب حد نصاب نمره زبان فارسی است.", shape=rect, style=filled];
+259 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+260 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+261 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+262 [class=intent, fillcolor=lightblue, label="تبصره- دانشگاه می‌تواند با همکاری گروه‌ها، حداكثر پنجاه درصد از واحدهای درسی دوره كارشناسی را با اولویت دروس پایه و عمومی، ضمن رعایت استانداردهای مصوب وزارت و تأكید بر محتوای الکترونیکی، به صورت مجازی (الکترونیکی) ارائه نماید.", shape=rect, style=filled];
+263 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+264 [class=intent, fillcolor=lightblue, label="تبصره ۱- در صورتی كه دانشجو در درسی بیش از  ۳/۱۶ (سه شانزدهم) جلسات غیبت كند، اما در آن درس نمره مستمر داشته باشد، امکان درج نمره تا ۸ برای كارشناسی، تا ۱۰ برای كارشناسی ارشد و تا ۱۲ برای دكتری تخصصی میسر است؛ در غیر این صورت، نمره درس فوق صفر منظور خواهد شد.", shape=rect, style=filled];
+265 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+266 [class=intent, fillcolor=lightblue, label="تبصره ۳- چنانچه غیبت دانشجو در جلسه امتحان پایان نیمسال تحصیلی به تشخیص كمیته منتخب شورا ی آموزشی دانشگاه موجه تشخیص داده شد، آن درس حذف می‌شود.", shape=rect, style=filled];
+267 [class=intent, fillcolor=lightblue, label="ماده ۷- چگونگی و ترتیب ارائه تمامی دروس هر دوره و هر رشته، ضمن رعایت پیش‌نیازی (تقدم و تأخر) دروس طبق برنامه درسی مصوب، در اختیار گروه است.", shape=rect, style=filled];
+268 [class=intent, fillcolor=lightblue, label="تبصره- دانشجو در آخرین نیمسال تحصیلی از رعایت مقررات مربوط به این ماده معاف است.", shape=rect, style=filled];
+269 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+270 [class=intent, fillcolor=lightblue, label="تبصره- نمره درس پس از تایید نهایی استاد غیر قابل تغییر است.", shape=rect, style=filled];
+271 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+272 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+273 [class=intent, fillcolor=lightblue, label="تبصره ۲- دانشجوی مشمول آموزش رایگان، در صورت حذف درس یا عدم كسب نمره قبولی در هر درس، موظف به پرداخت هزینه درس(ها) مطابق تعرفه دانشجوی شهریه‌پرداز دانشگاه است. در صورت تشخیص موجه بودن حذف درس(ها) توسط كمیته منتخب شورای آموزشی دانشگاه، دانشجوی مشمول آموزش رایگان ملزم به پرداخت شهریه متغیر درس حذف شده نیست. در صورتی كه واحدهای باقیمانده دانشجو كمتر از حداقل واحد انتخابی مجاز شود، نیمسال مذكور در رتبه بندی دانشجو در همان نیمسال و سال تحصیلی تاتیر نداشته و به عنوان یک نیمسال كامل جزو سنوات تحصیلی وی محسوب شده و در مشروط شدن دانشجو تأثیر دارد.", shape=rect, style=filled];
+274 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+275 [class=intent, fillcolor=lightblue, label="ماده ۱۱- دانشجوی متقاضی انصراف از تحصیل، باید از طریق پرتال دانشجویی برای انصراف از تحصیل اقدام و مراحل بعدی را تا حصول نتیجه و تصفیه حساب پیگیری نماید. دانشجو مجاز است فقط برای یکبار و تا دو ماه پس از تاریخ درخواست، تقاضای انصراف خود را پس بگیرد.", shape=rect, style=filled];
+276 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+277 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+278 [class=intent, fillcolor=lightblue, label="", shape=rect, style=filled];
+279 [class=intent, fillcolor=lightblue, label="ماده ۱۴- برنامه‌ریزی و تصمیم‌گیری درباره تقویم آموزشی، چگونگی اعلام و ثبت نمره، زمان حذف و اضافه، حذف اضطراری دروس، نحوه اعتراض به نتایج امتحانات، مهلت تجدید نظر و غیره طبق شیوه‌نامه اجرایی مصوب دانشگاه انجام می‌شود.", shape=rect, style=filled];
+280 [class=intent, fillcolor=lightblue, label="منظورت از آموزش رایگان چیست؟", shape=rect, style=filled];
+281 [class=intent, fillcolor=lightblue, label="منظورت هر دانشجوی شهریه‌پردازی هست؟", shape=rect, style=filled];
+282 [class=intent, fillcolor=lightblue, label="کدام حضوری؟", shape=rect, style=filled];
+283 [class=intent, fillcolor=lightblue, label="غیرحضوری؟", shape=rect, style=filled];
+284 [class=intent, fillcolor=lightblue, label="نیمه‌حضوری یعنی چه شکلی؟", shape=rect, style=filled];
+285 [class=intent, fillcolor=lightblue, label="استاد راهنمای تحصیلی یعنی چه کسی؟", shape=rect, style=filled];
+286 [class=intent, fillcolor=lightblue, label="نیمسال تحصیلیِ", shape=rect, style=filled];
+287 [class=intent, fillcolor=lightblue, label="حالم خوب نیست", shape=rect, style=filled];
+288 [class=intent, fillcolor=lightblue, label="وزارت؟", shape=rect, style=filled];
+289 [class=intent, fillcolor=lightblue, label="دانشگاه؟", shape=rect, style=filled];
+290 [class=intent, fillcolor=lightblue, label="مدرس چیه اصلا", shape=rect, style=filled];
+291 [class=intent, fillcolor=lightblue, label="منظورت از دانشجو چیست؟", shape=rect, style=filled];
+292 [class=intent, fillcolor=lightblue, label="خیلی خیلی عالی", shape=rect, style=filled];
+293 [class=intent, fillcolor=lightblue, label=accept, shape=rect, style=filled];
+294 [class=intent, fillcolor=lightblue, label="I'm not giving you my email address", shape=rect, style=filled];
+295 [class=intent, fillcolor=lightblue, label=cya, shape=rect, style=filled];
+296 [class=intent, fillcolor=lightblue, label="آیا من با یک ربات صحبت می‌کنم؟", shape=rect, style=filled];
+0 -> 220  [class="", key=NONE, label=""];
+0 -> 224  [class="", key=0];
+0 -> 225  [class="", key=0];
+0 -> 226  [class="", key=0];
+0 -> 227  [class="", key=0];
+0 -> 228  [class="", key=0];
+0 -> 229  [class="", key=0];
+0 -> 230  [class="", key=0];
+0 -> 231  [class="", key=0];
+0 -> 232  [class="", key=0];
+0 -> 233  [class="", key=0];
+0 -> 234  [class="", key=0];
+0 -> 235  [class="", key=0];
+0 -> 236  [class="", key=0];
+0 -> 237  [class="", key=0];
+0 -> 238  [class="", key=0];
+0 -> 239  [class="", key=0];
+0 -> 240  [class="", key=0];
+0 -> 241  [class="", key=0];
+0 -> 242  [class="", key=0];
+0 -> 243  [class="", key=0];
+0 -> 244  [class="", key=0];
+0 -> 245  [class="", key=0];
+0 -> 246  [class="", key=0];
+0 -> 247  [class="", key=0];
+0 -> 248  [class="", key=0];
+0 -> 249  [class="", key=0];
+0 -> 250  [class="", key=0];
+0 -> 251  [class="", key=0];
+0 -> 252  [class="", key=0];
+0 -> 253  [class="", key=0];
+0 -> 254  [class="", key=0];
+0 -> 255  [class="", key=0];
+0 -> 256  [class="", key=0];
+0 -> 257  [class="", key=0];
+0 -> 258  [class="", key=0];
+0 -> 259  [class="", key=0];
+0 -> 260  [class="", key=0];
+0 -> 261  [class="", key=0];
+0 -> 262  [class="", key=0];
+0 -> 263  [class="", key=0];
+0 -> 264  [class="", key=0];
+0 -> 265  [class="", key=0];
+0 -> 266  [class="", key=0];
+0 -> 267  [class="", key=0];
+0 -> 268  [class="", key=0];
+0 -> 269  [class="", key=0];
+0 -> 270  [class="", key=0];
+0 -> 271  [class="", key=0];
+0 -> 272  [class="", key=0];
+0 -> 273  [class="", key=0];
+0 -> 274  [class="", key=0];
+0 -> 275  [class="", key=0];
+0 -> 276  [class="", key=0];
+0 -> 277  [class="", key=0];
+0 -> 278  [class="", key=0];
+0 -> 279  [class="", key=0];
+1 -> 280  [class="", key=0];
+1 -> 281  [class="", key=0];
+1 -> 282  [class="", key=0];
+1 -> 283  [class="", key=0];
+1 -> 284  [class="", key=0];
+1 -> 285  [class="", key=0];
+1 -> 286  [class="", key=0];
+1 -> 287  [class="", key=0];
+1 -> 288  [class="", key=0];
+1 -> 289  [class="", key=0];
+1 -> 290  [class="", key=0];
+1 -> 291  [class="", key=0];
+1 -> 292  [class="", key=0];
+2 -> 3  [class="", key=NONE, label=""];
+3 -> 293  [class="", key=0];
+4 -> "-1"  [class="", key=NONE, label=""];
+6 -> 3  [class="", key=NONE, label=""];
+10 -> 3  [class="", key=NONE, label=""];
+14 -> 3  [class="", key=NONE, label=""];
+18 -> 3  [class="", key=NONE, label=""];
+22 -> 3  [class="", key=NONE, label=""];
+26 -> 3  [class="", key=NONE, label=""];
+29 -> 3  [class="", key=NONE, label=""];
+32 -> 3  [class="", key=NONE, label=""];
+35 -> 3  [class="", key=NONE, label=""];
+38 -> 3  [class="", key=NONE, label=""];
+41 -> 3  [class="", key=NONE, label=""];
+44 -> 3  [class="", key=NONE, label=""];
+47 -> 3  [class="", key=NONE, label=""];
+50 -> 3  [class="", key=NONE, label=""];
+53 -> 3  [class="", key=NONE, label=""];
+56 -> 3  [class="", key=NONE, label=""];
+59 -> 3  [class="", key=NONE, label=""];
+62 -> 3  [class="", key=NONE, label=""];
+65 -> 3  [class="", key=NONE, label=""];
+68 -> 3  [class="", key=NONE, label=""];
+71 -> 3  [class="", key=NONE, label=""];
+74 -> 3  [class="", key=NONE, label=""];
+77 -> 3  [class="", key=NONE, label=""];
+80 -> 3  [class="", key=NONE, label=""];
+83 -> 3  [class="", key=NONE, label=""];
+86 -> 3  [class="", key=NONE, label=""];
+89 -> 3  [class="", key=NONE, label=""];
+92 -> 3  [class="", key=NONE, label=""];
+97 -> 3  [class="", key=NONE, label=""];
+100 -> 3  [class="", key=NONE, label=""];
+103 -> 3  [class="", key=NONE, label=""];
+106 -> 3  [class="", key=NONE, label=""];
+109 -> 3  [class="", key=NONE, label=""];
+112 -> 3  [class="", key=NONE, label=""];
+115 -> 3  [class="", key=NONE, label=""];
+118 -> 3  [class="", key=NONE, label=""];
+121 -> 3  [class="", key=NONE, label=""];
+124 -> 3  [class="", key=NONE, label=""];
+128 -> 3  [class="", key=NONE, label=""];
+128 -> 163  [class="", key=NONE, label=""];
+131 -> 3  [class="", key=NONE, label=""];
+134 -> 3  [class="", key=NONE, label=""];
+137 -> 3  [class="", key=NONE, label=""];
+140 -> 3  [class="", key=NONE, label=""];
+143 -> 3  [class="", key=NONE, label=""];
+146 -> 3  [class="", key=NONE, label=""];
+149 -> 3  [class="", key=NONE, label=""];
+152 -> 3  [class="", key=NONE, label=""];
+155 -> 3  [class="", key=NONE, label=""];
+158 -> 3  [class="", key=NONE, label=""];
+163 -> 294  [class="", key=0];
+164 -> "-1"  [class="", key=NONE, label=""];
+165 -> 3  [class="", key=NONE, label=""];
+168 -> 3  [class="", key=NONE, label=""];
+171 -> 3  [class="", key=NONE, label=""];
+174 -> 3  [class="", key=NONE, label=""];
+177 -> 3  [class="", key=NONE, label=""];
+180 -> 3  [class="", key=NONE, label=""];
+183 -> 3  [class="", key=NONE, label=""];
+186 -> 3  [class="", key=NONE, label=""];
+189 -> 3  [class="", key=NONE, label=""];
+192 -> 3  [class="", key=NONE, label=""];
+196 -> 3  [class="", key=NONE, label=""];
+199 -> 3  [class="", key=NONE, label=""];
+202 -> 3  [class="", key=NONE, label=""];
+205 -> 3  [class="", key=NONE, label=""];
+209 -> 3  [class="", key=NONE, label=""];
+213 -> 3  [class="", key=NONE, label=""];
+217 -> 3  [class="", key=NONE, label=""];
+220 -> 295  [class="", key=0];
+220 -> 296  [class="", key=0];
+223 -> "-1"  [class="", key=NONE, label=""];
+224 -> 1  [class="", key=0];
+225 -> 29  [class="", key=0];
+226 -> 32  [class="", key=0];
+227 -> 35  [class="", key=0];
+228 -> 38  [class="", key=0];
+229 -> 41  [class="", key=0];
+230 -> 44  [class="", key=0];
+231 -> 47  [class="", key=0];
+232 -> 50  [class="", key=0];
+233 -> 53  [class="", key=0];
+234 -> 56  [class="", key=0];
+235 -> 59  [class="", key=0];
+236 -> 62  [class="", key=0];
+237 -> 65  [class="", key=0];
+238 -> 68  [class="", key=0];
+239 -> 71  [class="", key=0];
+240 -> 74  [class="", key=0];
+241 -> 77  [class="", key=0];
+242 -> 80  [class="", key=0];
+243 -> 83  [class="", key=0];
+244 -> 86  [class="", key=0];
+245 -> 89  [class="", key=0];
+246 -> 92  [class="", key=0];
+247 -> 97  [class="", key=0];
+248 -> 100  [class="", key=0];
+249 -> 103  [class="", key=0];
+250 -> 106  [class="", key=0];
+251 -> 109  [class="", key=0];
+252 -> 112  [class="", key=0];
+253 -> 115  [class="", key=0];
+254 -> 118  [class="", key=0];
+255 -> 121  [class="", key=0];
+256 -> 124  [class="", key=0];
+257 -> 131  [class="", key=0];
+258 -> 134  [class="", key=0];
+259 -> 137  [class="", key=0];
+260 -> 140  [class="", key=0];
+261 -> 143  [class="", key=0];
+262 -> 146  [class="", key=0];
+263 -> 149  [class="", key=0];
+264 -> 152  [class="", key=0];
+265 -> 155  [class="", key=0];
+266 -> 158  [class="", key=0];
+267 -> 165  [class="", key=0];
+268 -> 168  [class="", key=0];
+269 -> 171  [class="", key=0];
+270 -> 174  [class="", key=0];
+271 -> 177  [class="", key=0];
+272 -> 180  [class="", key=0];
+273 -> 183  [class="", key=0];
+274 -> 186  [class="", key=0];
+275 -> 189  [class="", key=0];
+276 -> 192  [class="", key=0];
+277 -> 199  [class="", key=0];
+278 -> 202  [class="", key=0];
+279 -> 205  [class="", key=0];
+280 -> 2  [class="", key=0];
+281 -> 6  [class="", key=0];
+282 -> 10  [class="", key=0];
+283 -> 14  [class="", key=0];
+284 -> 18  [class="", key=0];
+285 -> 22  [class="", key=0];
+286 -> 26  [class="", key=0];
+287 -> 128  [class="", key=0];
+288 -> 196  [class="", key=0];
+289 -> 209  [class="", key=0];
+290 -> 213  [class="", key=0];
+291 -> 217  [class="", key=0];
+292 -> 4  [class="", key=0];
+293 -> 4  [class="", key=0];
+294 -> 164  [class="", key=0];
+295 -> 164  [class="", key=0];
+296 -> 223  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

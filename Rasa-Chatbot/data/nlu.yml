@@ -1,0 +1,2496 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - سلام
+    - سلوم
+    - سلم
+    - صبح بخیر
+    - sobh bekheir
+    - عصر بخیر
+    - asr bekheir
+    - بزن بریم
+    - bezan berim
+    - چه خبرا
+    - che khabara
+    - چه خبر
+    - che khabar
+    - salam
+    - Salam
+    - SALAM
+    - سلام سیمرغ
+    - Salam Simurgh
+    - salam simorgh
+    - salam simourgh
+    - salam simoorgh
+    - Bom dia
+    - Bonjour
+    - Good Morning
+    - Good morning
+    - Good mourning
+    - Guten Morgen
+    - HELLO
+    - سسسسسلام
+    - سسسسللللام
+    - سلاااااااااام
+    - salaaaaaaaaam
+    - salaaaaam
+    - saaaaaalaaam
+    - saaaaalam
+    - HEY
+    - هی
+    - HEllo
+    - HI
+    - های
+    - HI Simurgh
+    - Hallo
+    - Hei
+    - Hellllooooooo
+    - Hello
+    - Hello Bot
+    - salam bot
+    - سلام ربات
+    - سلام بات
+    - Hello Simurgh
+    - Hello Simurgh
+    - Hello Simurgh
+    - Hello!
+    - Hey
+    - Hey Simurgh
+    - Hey bot
+    - Heya
+    - Heylo
+    - Hi
+    - Hi Simurgh
+    - Hi Simurgh!
+    - سلام سیمرغ!
+    - سلام سیمرغ..
+    - Hi bot
+    - Hi man
+    - Hi Simurgh
+    - Hi Simurgh
+    - Hi Simurgh..
+    - Hi there
+    - Hi!
+    - Hi'
+    - Hi,
+    - سلام، ربات
+    - Hi, bot
+    - Hieee
+    - Hieeeeeeeeeeeee
+    - Hola
+    - گفتم، سلام
+    - I said, helllllloooooO!!!!
+    - Well hello there ;)
+    - What is up?
+    - Whats up
+    - Whats up my bot
+    - Whats up?
+    - ayyyy whaddup
+    - bonjour
+    - ey boss
+    - good evening
+    - good moring
+    - good morning
+    - greet
+    - greetings
+    - hai
+    - hallo
+    - hallo Simurgh
+    - halloo
+    - halloooo
+    - halo
+    - halo Simurgh
+    - heeey
+    - heelio
+    - hell9o
+    - hellio
+    - hello
+    - hello Simurgh
+    - hello everybody
+    - hello friend
+    - hello hi
+    - hello is anybody there
+    - hello it is me again
+    - hello robot
+    - hello Simurgh
+    - hello sweatheart
+    - hello sweet boy
+    - hello there
+    - hello world
+    - hello, my name is [Charles Pfeffer](name)
+    - hello?
+    - hello]
+    - hellooo
+    - helloooo
+    - helo
+    - hey
+    - hey bot
+    - hey bot!
+    - hey dude
+    - hey hey
+    - hey let's talk
+    - hey Simurgh
+    - hey Simurgh
+    - hey ther
+    - hey there
+    - hey there boy
+    - hey there..
+    - hey, let's talk
+    - hey, Simurgh!
+    - heya
+    - heyho
+    - heyo
+    - hhola
+    - hi
+    - hi !
+    - hi Mister
+    - hi again
+    - hi can you speak ?
+    - hi folks
+    - hi friend
+    - hi friends
+    - hi hi
+    - hi i'm [Sandra Hernandez](name)
+    - hi im [Amanda Anderson](name)
+    - hi mrs Simurgh
+    - hi pal!
+    - hi Simurgh
+    - hi there
+    - hi there it's me
+    - hi!
+    - hi.........................................................
+    - hi?
+    - hieee
+    - hii
+    - hiihihi
+    - hiii
+    - hlo
+    - hola
+    - howdy
+    - i am [Karen Mease](name)
+    - jojojo
+    - jop
+    - konichiwa
+    - merhaba
+    - ola Simurgh
+    - Simurgh hello
+    - salut
+    - sup
+    - wasssup
+    - wasssup!
+    - what up
+    - whats popping
+    - whats up
+    - yo
+    - yoo
+    - ssup?
+    - helleo
+
+- intent: goodbye
+  examples: |
+    - خداحافظ
+    - خدانگهدار
+    - بای
+    - شب بخیر
+    - روز خوبی داشته باشید
+    - به امید دیدار
+    - باي باي
+    - بعدا میبینمت
+    - Bye
+    - Bye bye
+    - adios
+    - adios?
+    - bye
+    - bye .
+    - bye :P
+    - bye bot
+    - bye bye
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodbye
+    - goodbye.
+    - goodnight
+    - gotta go
+    - k byyye #slay
+    - ok Bye
+    - ok bye
+    - ok, bye
+    - ok.bye
+    - see u later
+    - see ya
+    - see you
+    - see you . bye
+    - take care
+    - then bye
+    - tlak to you later
+    - toodle-oo
+    - Exit
+    - Close this talk
+    - byr
+
+- intent: affirm
+  examples: |
+    - Accept
+    - پذیرفتم
+    - Awesome!
+    - عالی
+    - Good
+    - خوبه
+    - Great
+    - بسیار عالی
+    - I accept
+    - می پذیرم
+    - I accept.
+    - می‌پذیرم.
+    - I agree
+    - بله
+    - موافقم
+    - I am using it
+    - I changed my mind. I want to accept it
+    - نظرم عوض شد. می‌پذیرمش
+    - I do
+    - انجامش میدم
+    - I get it
+    - I guess so
+    - I have used it in the past
+    - I will
+    - I'd absolutely love that
+    - I'm sure I will!
+    - I'm using it
+    - Nice
+    - OK
+    - باشه
+    - Ofcourse
+    - Oh yes
+    - اوه بله
+    - Oh, ok
+    - اوه، باشه
+    - Ok
+    - باشود
+    - Ok let's start
+    - باشه بزن بریم
+    - Ok.
+    - باشه.
+    - Okay
+    - اوکی
+    - اوکی.
+    - Okay!
+    - PLEASE
+    - SURE
+    - حتماً
+    - Sure
+    - بله حتماً
+    - Sweet
+    - That would be great
+    - YES
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep!
+    - Yepp
+    - Yes
+    - Yes I do
+    - Yes please
+    - Yes please!
+    - Yes, I accept
+    - Yes.
+    - Yup
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - بسیار خب
+    - خب باشه
+    - alright, cool
+    - amayzing
+    - amazing!
+    - awesome
+    - awesome!
+    - confirm
+    - cool story bro
+    - definitely yes without a doubt
+    - done
+    - fair enough
+    - fcourse
+    - fine
+    - fuck yeah!
+    - go
+    - go ahead
+    - go for it
+    - going super well
+    - good.
+    - great
+    - great lets do that
+    - great!
+    - hell yeah
+    - hell yes
+    - hm, i'd like that
+    - how nice!
+    - i accept
+    - i agree
+    - i am!
+    - i want that
+    - i will!
+    - it is ok
+    - its okay
+    - ja
+    - ja cool
+    - ja thats great
+    - jezz
+    - jo
+    - k
+    - kk
+    - lets do it
+    - lets do this
+    - not bad
+    - of course
+    - ofcoure i do
+    - ofcourse
+    - oh awesome!
+    - oh cool
+    - oh good !!
+    - oh super
+    - ok
+    - ok cool
+    - ok fine
+    - ok friend
+    - ok good
+    - ok great
+    - ok i accept
+    - ok Simurgh
+    - ok, I behave now
+    - ok, I understood
+    - ok, Simurgh
+    - ok...
+    - okay
+    - okay cool
+    - okay sure
+    - okay..
+    - oki doki
+    - okie
+    - ook
+    - oui
+    - perfect
+    - please
+    - si
+    - sort of
+    - sure
+    - sure thing
+    - sure!
+    - that is cool
+    - that ok
+    - that sounds fine
+    - that's great
+    - thats fine
+    - thats good
+    - thats great
+    - top
+    - uh-huh
+    - very much
+    - well yes
+    - y
+    - ya
+    - ya cool
+    - ya go for it
+    - ya i want
+    - ya please
+    - ya thats cool
+    - yaah
+    - yap
+    - yaps
+    - yas
+    - yay
+    - ye
+    - ye splease
+    - yea
+    - yeah
+    - yeah do that
+    - yeah sure
+    - yeah'=
+    - yeah, why not
+    - yeeeeezzzzz
+    - yeeees
+    - yep
+    - yep i want that
+    - yep if i have to
+    - yep please
+    - yep that's nice
+    - yep thats cool
+    - yep, will do thank you
+    - yep. :/
+    - yes
+    - yes ...
+    - yes I do
+    - yes accept please
+    - yes baby
+    - yes cool
+    - yes give me information
+    - yes go ahead
+    - yes go for it
+    - yes great
+    - yes i accept
+    - yes i agree
+    - yes i have built a bot before
+    - yes i have!
+    - yes it is
+    - yes it was okay
+    - yes of course
+    - yes pleae
+    - yes please
+    - yes please!
+    - yes pls
+    - yes sirfr
+    - yes that's great
+    - yes that's what i want
+    - yes you can
+    - yes'
+    - yes, I'd love to
+    - yes, cool
+    - yes, give me information, please
+    - yes,i am
+    - yes.
+    - yesh
+    - yess
+    - yessoo
+    - yesss
+    - yesssss
+    - yesyestyes
+    - yesyesyes
+    - yez
+    - yop
+    - you asked me a yes or no question, which i answered with yes
+    - you got me, I accept, if you want me to
+    - yres
+    - ys
+    - yup
+    - yyeeeh
+    - Okay cool
+    - ok..
+    - considering
+    - More a less
+    - sounds good!
+    - really
+
+- intent: react_positive
+  examples: |
+    - cool beans
+    - sweet
+    - Cool
+    - cool
+    - cool :)
+    - cool!
+    - coolio
+    - :)
+    - :D
+    - HAHA
+    - I am happy
+    - LOL
+    - Lol
+    - Lol thats funny
+    - Looks nice
+    - WOW
+    - Wow
+    - You are great
+    - You're cute.
+    - You're nice.
+    - You're really cool
+    - hAHAHA
+    - ha ha
+    - haha
+    - hahah
+    - hahaha
+    - happy
+    - i am feeling happy
+    - i am happy
+    - i am happy today
+    - i am very happy with your response
+    - i love you
+    - it's pretty cool
+    - lol
+    - love you
+    - okay Rasabot, you're cool
+    - rasa is awesome
+    - such a great demo
+    - that is funny
+    - that was a great interaction
+    - thats funny
+    - today was a nice day
+    - wow
+    - you are a badass bot!
+    - you are awesome
+    - you are cool
+    - you are cool man
+    - you are doin great
+    - you are funny
+    - you are great
+    - you are my new bestfriend
+    - you seem pretty cool :D
+    - I like you
+    - I love you
+    - you are realy intelligent
+    - I like Rasa
+    - hèhè
+    - like u
+    - you are so smart
+    - That's awesome.
+    - Got it
+    - you good
+    - Great information
+    - I mean to say that I liked the explanation
+    - Super! I love Rasa
+
+- intent: canthelp
+  examples: |
+    - I think you cant help me
+    - and that's it?
+    - and you call yourself bot company? pff
+    - do you get anything?
+    - exit
+    - exit now
+    - hey, you promised to contact me, but nobody did, I really need to finish that car insurance bot!!!!
+    - hm i don't think you can do what i want
+    - i guess you can't help me then
+    - nothing else?
+    - ok i guess you can't help me
+    - ok then you cant help me
+    - ok, but that doesnt help me
+    - stop
+    - stop go back
+    - stop this conversation
+    - that was shit, you're not helping
+    - that's not what i want
+    - this conversation is not really helpful
+    - this is leading to nothing
+    - you can't help me
+    - you can't help me with what i need
+    - you cannot help me with what I want
+    - you cant help me
+    - quit
+    - that does not help
+
+- intent: deny
+  examples: |
+    - نه
+    - هرگز
+    - فکر نمی‌کنم
+    - این را دوست ندارم
+    - نه به هیچ وجه
+    - نه واقعاً
+    - I don't want to
+    - I don't want to give it to you
+    - I don't want to say
+    - I dont want to tell
+    - I'm not giving you my email address
+    - I'm not going to give it to you
+    - NEIN
+    - NO
+    - NO DON"T WANT THIS!
+    - Nah
+    - Neither
+    - Never
+    - Nevermind
+    - No
+    - No thank you
+    - No, not really.
+    - No, thank you
+    - No.
+    - Nopes
+    - Not really
+    - absolutely not
+    - decline
+    - definitely not
+    - deny
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+    - it is going pretty badly
+    - it sucks
+    - it sux
+    - n
+    - na
+    - nah
+    - nah I'm good
+    - nah not for me
+    - nah, first time
+    - nah, i'm good
+    - nehi
+    - nein
+    - neither
+    - never
+    - never mind
+    - no
+    - no :(
+    - no I dont want
+    - no I haven't decided yet if I want to sign up
+    - no and no again
+    - no bots at all
+    - no go
+    - no i can't
+    - no i don't accept
+    - no i dont want to
+    - no i dont want to accept :P lol
+    - no i won't
+    - no ma'am
+    - no sir
+    - no sorry
+    - no thank s
+    - no thank you
+    - no thanks
+    - no way
+    - no you did it wrong
+    - no!!!!
+    - no, i hate it
+    - no, my frst time
+    - no, thank you
+    - no, thanks
+    - no, thankyou
+    - no. u r idiot
+    - non
+    - noooooooooo
+    - noooooooooooooooooooooooooooooooooooooooo
+    - nop
+    - nope
+    - nope!
+    - nope. i am good
+    - not going well at all
+    - not really
+    - not right now
+    - not yet
+    - nö
+    - sorry not right now
+    - still dont want to tell
+    - thanks but no thanks
+    - this sucks
+    - very bad
+    - I do not need help installing
+    - I don't wanna tell the name of my company
+    - no stop
+    - stop it, i do not care!!!
+    - none of them
+    - I don't agree
+
+- intent: explain
+  examples: |
+    - can you elaborate
+    - could you explain why you need that
+    - could you tell me more
+    - explain it to me
+    - explain that
+    - i want more information
+    - i would like to know why you need that
+    - please elaborate
+    - please explain
+    - why do you need to know that
+    - why is that necessary
+    - give me more details
+    - why
+    - what do you mean
+    - what does that mean
+    - how come?
+
+- intent: react_negative
+  examples: |
+    - I am feeling bad
+    - I am sad
+    - I am super sad
+    - I'm sad
+    - I'm super sad
+    - Now I'm sad
+    - This is bad
+    - You are quite bad
+    - bad
+    - bad boy
+    - crappy joke
+    - documentation of rasa is very bad
+    - i am angry over you
+    - i am feel sad
+    - i am sad
+    - i am sad about that
+    - i am very sad
+    - i feel sad
+    - i sad
+    - i'm sad
+    - rasa is bad
+    - sad
+    - so sad
+    - so sad :(
+    - super sad
+    - u broke my heart
+    - very very sad
+    - you are bad
+    - you are bad bot
+    - you make me sad
+    - You are mad
+    - You are rude
+    - bots are bad
+    - i don't care!!!!
+    - i dont like bots
+    - this is a really frustrating experience
+    - you're rather dull
+    - i am so worry
+    - i will leave
+    - Although I understand your still in development, I feel a little bit disappointed.
+    - Surely you're not so smart lik i thought
+    - iam not feeling good
+    - not good
+    - Thats so rude
+    - sadly
+    - That tool here isnt good
+    - boring
+
+- intent: thank
+  examples: |
+    - متشکرم
+    - تشکر می‌کنم
+    - ممنونم
+    - خیلی ممنون
+    - با تشکر
+    - لطف کردید
+    - دمت گرم
+    - دستت طلا
+    - ممنون
+    - Cool. Thanks
+    - Great, thanks
+    - Thank you
+    - Thank you Simurgh
+    - Thank you so much
+    - Thank's!
+    - Thanks
+    - Thanks bot
+    - Thanks for that
+    - Thanks!
+    - amazing, thanks
+    - cheers
+    - cheers bro
+    - cool thank you
+    - cool thanks
+    - cool, thanks
+    - danke
+    - great thanks
+    - ok thanks
+    - ok thanks Simurgh
+    - ok thanks!
+    - perfect thank you
+    - thank u
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for forum link, I'll check it out
+    - thanks for the help
+    - thanks this is great news
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - yes thanks
+    - thanks for your information
+    - thanks f
+
+- intent: mood_great
+  examples: |
+    - کامل
+    - عالی
+    - شگفت‌انگیز
+    - احساس پادشاهی می‌کنم
+    - فوق‌العاده
+    - من احساس خیلی خوبی دارم
+    - من عالی هستم
+    -	من عالی هستم
+    - من قصد دارم دنیا را نجات دهم
+    - فوق العاده هیجان زده
+    - فوق العاده خوب
+    - خیلی خیلی عالی
+    - خیلی خوب
+    - خیلی عالی
+
+- intent: mood_unhappy
+  examples: |
+    - روز من بسیار وحشتناک بود
+    - من ناراحت هستم
+    - حالم خوب نیست
+    - من نا امید هستم
+    - ناراحتی خیلی زیاد 
+    - خیلی ناراحت هستم
+    - ناراحت
+    - بسیار ناراحت
+    - ناراضی
+    - خوب نیست
+    - زیاد خوب نیست 
+    - غم انگیز شدید
+    - خیلی غمگین 
+    - خیلی ناراحت
+
+- intent: bot_challenge
+  examples: |
+    - آیا شما یک ربات هستید؟
+    - آیا شما یک انسان هستید؟ 
+    - آیا من با یک ربات صحبت می‌کنم؟
+    - آیا من با یک انسان صحبت می‌کنم؟
+    - تو رباتی؟
+    - آیا تو ربات هستی؟
+
+# Chapter 1
+
+# Set of Academic Rules and Regulations
+
+# Definitions
+
+# 1
+- intent: what_is_definition_of_vezarat
+  examples: |
+    - منظورت از وزارت چیست؟
+    - وزارت؟!!
+    - منظورت وزارت علوم، تحقیقات و فناوری است؟ 
+    - منظور وزارت علوم، تحقیقات و فناوری است؟
+    - منظورت وزارت علوم است؟
+    - منظور وزارت علومه؟ 
+    - منظورت وزارت علومه؟
+    - وزارت یعنی کجا؟
+    - وزارت؟
+    - وزارتِ
+    - منظورت از وزارت کدام وزارت است؟
+    - منظورت از وزارت کدام وزارت خانه هست؟
+    - منظور از وزارت کدوم وزارت خونه هست
+    - کدوم وزارت؟
+    - کدام وزارت؟
+
+# 2
+- intent: what_is_definition_of_daneshgah
+  examples: |
+    - منظورت از دانشگاه چیست؟
+    - دانشگاه؟!!
+    - دانشگاه چیه؟
+    - دانشگاه چیه اصلا
+    - منظورت هر یک از دانشگاه ها و موسسه های آموزش عالی و پژوهشی)اعم از دولتی و غیردولتی( كه دارای مجوز تاسیس از مراجع ذیربط بوده و مجری هر یک/ یکی از دورههای كاردانی، كارشناسی ناپیوسته و پیوسته، كارشناسی ارشد، دكتری عمومی، دكتری تخصصی و دستیاری دورههای تخصصی هستند.
+    - منظور دانشگاه با تعریفی که میشناسیم هست؟
+    - منظورت دانشگاه مثل دانشگاه فردوسی است؟
+    - منظور دانشگاه فردوسیه؟ 
+    - منظورت هر دانشگاهی هست؟
+    - دانشگاه یعنی کجا؟
+    - دانشگاه؟
+    - دانشگاهِ
+    - منظورت از دانشگاه کدام دانشگاه است؟
+    - منظورت از دانشگاه کدام دانشگاه هست؟
+    - منظور از دانشگاه کدوم دانشگاه هست
+    - کدوم دانشگاه؟
+    - کدام دانشگاه؟
+
+# 3
+- intent: what_is_definition_of_modares
+  examples: |
+    - منظورت از مدرس کیست؟
+    - مدرس؟!!
+    - مدرس کیه؟
+    - مدرس چیه اصلا
+    - منظورت از مدرس فردی كه در دانشگاه به آموزش و یاددهی مهارت به صورت تمام وقت، نیمه وقت یا پاره وقت اشتغال دارد.
+    - منظور مدرس با تعریفی که میشناسیم هست؟
+    - منظورت مدرس مثل اساتید دانشگاه است؟
+    - منظور از مدرس استاد دانشگاه هست؟ 
+    - منظورت هر مدرسی هست؟
+    - مدرس یعنی کی؟
+    - مدرس یعنی چه کسی؟
+    - مدرس؟
+    - مدرسِ
+    - منظورت از مدرس استاد دانشگاه است؟
+    - منظورت از مدرس کدام مدرس هست؟
+    - منظور از مدرس کدوم مدرس هست
+    - کدوم مدرس؟
+    - کدام مدرس؟
+
+# 4
+- intent: what_is_definition_of_daneshjou
+  examples: |
+    - منظورت از دانشجو کیست؟
+    - دانشجو؟!!
+    - دانشجو کیه؟
+    - دانشجو چیه اصلا
+    - منظورت از دانشجو فردی كه در یکی از دوره های آموزش عالی براساس ضوابط پذیرفته شده، و پس از تبت نام به تحصیل میپردازد.
+    - منظور دانشجو با تعریفی که میشناسیم هست؟
+    - منظورت دانشجو مثل دانشجویان دانشگاه است؟
+    - منظور از دانشجو چیست؟ 
+    - منظورت هر دانشجویی هست؟
+    - دانشجو یعنی کی؟
+    - دانشجو یعنی چه کسی؟
+    - دانشجو؟
+    - دانشجوِ
+    - منظورت از دانشجو چیست؟
+    - منظورت از دانشجو کدام دانشجو هست؟
+    - منظور از دانشجو کدوم دانشجو هست
+    - کدوم دانشجو؟
+    - کدام دانشجو؟
+
+# 5
+- intent: what_is_definition_of_amouzeshe_rayegan
+  examples: |
+    - منظورت از آموزش رایگان چیست؟
+    - آموزش رایگان؟!!
+    - آموزش رایگان چیه؟
+    - آموزش رایگان چیه اصلا
+    - آیا منظور تحصیل دانشجو در طول سنوات مجاز دوره آموزشی بدون پرداخت هزینه است. در صورتی كه دانشجوی مشمول آموزش رایگان ملزم به پرداخت هزینه شود، تعرفه آن مطابق دانشجوی شهریه‌پرداز نوبت دوم دانشگاه می‌باشد
+    - منظور آموزش رایگانی که می‌شناسیم هست؟
+    - منظورت آموزش رایگان مثل شیوه آموزشی دانشجویان روزانه است؟
+    - منظور از آموزش رایگان چیست؟ 
+    - منظورت هر آموزش رایگانی هست؟
+    - آموزش رایگان یعنی چی؟
+    - آموزش رایگان یعنی چه چیزی؟
+    - آموزش رایگان؟
+    - آموزش رایگانِ
+    - منظورت از آموزش رایگان چیست؟
+    - منظورت از آموزش رایگان کدام آموزش رایگان هست؟
+    - منظور از آموزش رایگان کدوم آموزش رایگان هست
+    - کدوم آموزش رایگان؟
+    - کدام آموزش رایگان؟
+
+# 6
+- intent: what_is_definition_of_daneshjoue_shahriehpardaz
+  examples: |
+    - منظورت از دانشجوی شهریه‌پرداز کیست؟
+    - دانشجوی شهریه‌پرداز؟!!
+    - دانشجوی شهریه‌پرداز کیه؟
+    - دانشجوی شهریه‌پرداز چیه اصلا
+    - منظورت از دانشجوی شهریه‌پرداز دانشجویی است كه به ازای تحصیل در طول دوره تحصیلی ملزم به پرداخت هزینه مصوب از سوی دانشگاه مربوطه است .
+    - منظور دانشجوی شهریه‌پرداز با تعریفی که میشناسیم هست؟
+    - منظورت دانشجوی شهریه‌پرداز مثل دانشجویان دانشگاه است؟
+    - منظور از دانشجوی شهریه‌پرداز چیست؟ 
+    - منظورت هر دانشجوی شهریه‌پردازی هست؟
+    - دانشجوی شهریه‌پرداز یعنی کی؟
+    - دانشجوی شهریه‌پرداز یعنی چه کسی؟
+    - دانشجوی شهریه‌پرداز؟
+    - دانشجوی شهریه‌پردازِ
+    - منظورت از دانشجوی شهریه‌پرداز چیست؟
+    - منظورت از دانشجوی شهریه‌پرداز کدام دانشجو هست؟
+    - منظور از دانشجوی شهریه‌پرداز کدوم دانشجو هست
+    - کدوم دانشجوی شهریه‌پرداز؟
+    - کدام دانشجوی شهریه‌پرداز؟
+
+# 7
+- intent: what_is_definition_of_hozouri
+  examples: |
+    - منظورت از حضوری چیست؟
+    - حضوری؟!!
+    - حضوری چیه؟
+    - حضوری چیه اصلا
+    - منظورت نوعی از آموزش كه دانشجو به صورت تمام وقت و با حضور در همه كلاس‌های درس دوره مربوط به فعالیت تحصیلی می‌پردازد. این نوع آموزش می تواند به صورت حضور فیزیکی در كلاس، الکترونیکی (برخط و غیر برخط) و یا تركیبی انجام شود؟
+    - منظور حضوری که می‌شناسیم هست؟
+    - منظورت حضوری مثل دوران قبل از کرونا است؟
+    - منظورت حضوری مثل دوران قبل از کرونا هست؟
+    - منظور از حضوری چیست؟ 
+    - حضوری یعنی چی؟
+    - حضوری یعنی چه کسی؟
+    - حضوری؟
+    - حضوریِ
+    - منظورت از حضوری چیست؟
+    - منظورت از حضوری کدام حضوری هست؟
+    - منظور از حضوری کدوم حضوری هست
+    - کدوم حضوری؟
+    - کدام حضوری؟
+
+# 8
+- intent: what_is_definition_of_gheire_hozouri
+  examples: |
+    - منظورت از غیرحضوری چیست؟
+    - غیرحضوری؟!!
+    - غیرحضوری چیه؟
+    - غیرحضوری چیه اصلا
+    - منظورت نوعی از آموزش كه دانشجو بدون حضور در كلاس درس به فعالیت تحصیلی می‌پردازد؟
+    - منظور غیرحضوری که می‌شناسیم هست؟
+    - منظورت غیرحضوری مثل دوران قبل از کرونا است؟
+    - منظورت غیرحضوری مثل دوران قبل از کرونا هست؟
+    - منظور از غیرحضوری چیست؟ 
+    - غیرحضوری یعنی چی؟
+    - غیرحضوری یعنی چه کسی؟
+    - غیرحضوری؟
+    - غیرحضوریِ
+    - منظورت از غیرحضوری چیست؟
+    - منظورت از غیرحضوری کدام غیرحضوری هست؟
+    - منظور از غیرحضوری کدوم غیرحضوری هست
+    - کدوم غیرحضوری؟
+    - کدام غیرحضوری؟
+
+# 9
+- intent: what_is_definition_of_nimeh_hozouri
+  examples: |
+    - منظورت از نیمه‌حضوری چیست؟
+    - نیمه‌حضوری؟!!
+    - نیمه‌حضوری چیه؟
+    - نیمه‌حضوری چیه اصلا
+    - منظورت نوعی از آموزش كه بخشی از آن حضوری و بخش دیگر غیرحضوری به انجام میرسد؟
+    - منظور نیمه‌حضوری که می‌شناسیم هست؟
+    - منظورت نیمه‌حضوری مثل اوایل دوران بعد از کرونا است؟
+    - منظورت نیمه‌حضوری مثل اوایل دوران بعد از کرونا هست؟
+    - منظور از نیمه‌حضوری چیست؟ 
+    - نیمه‌حضوری یعنی چی؟
+    - نیمه‌حضوری یعنی چه شکلی؟
+    - نیمه‌حضوری؟
+    - نیمه‌حضوریِ
+    - منظورت از نیمه‌حضوری چیست؟
+    - منظورت از نیمه‌حضوری کدام نیمه‌حضوری هست؟
+    - منظور از نیمه‌حضوری کدوم نیمه‌حضوری هست
+    - کدوم نیمه‌حضوری؟
+    - کدام نیمه‌حضوری؟
+
+# 10
+- intent: what_is_definition_of_ostad_rahnamaye_tahsili
+  examples: |
+    - منظورت از استاد راهنمای تحصیلی چیست؟
+    - استاد راهنمای تحصیلی؟!!
+    - استاد راهنمای تحصیلی چیه؟
+    - استاد راهنمای تحصیلی چیه اصلا
+    - آیا منظور عضو هیات علمی آگاه و مسلط به امور آموزشی، كه برای هدایت تحصیلی دانشجو از ابتدای تحصیل و از سوی گروه آموزشی انتخاب می‌شود؟
+    - منظور استاد راهنمای تحصیلی که می‌شناسیم هست؟
+    - منظورت استاد راهنمای تحصیلی مثل استاد راهنما است؟
+    - منظورت استاد راهنمای تحصیلی مثل استاد راهنما هست؟
+    - منظور از استاد راهنمای تحصیلی چیست؟ 
+    - استاد راهنمای تحصیلی یعنی چی؟
+    - استاد راهنمای تحصیلی یعنی چه کسی؟
+    - استاد راهنمای تحصیلی؟
+    - استاد راهنمای تحصیلیِ
+    - استاد راهنمای تحصیلی؟
+    - منظورت از استاد راهنمای تحصیلی کدام استاد راهنمای تحصیلی هست؟
+    - منظور از استاد راهنمای تحصیلی کدوم استاد راهنمای تحصیلی هست
+    - کدوم استاد راهنمای تحصیلی؟
+    - کدام استاد راهنمای تحصیلی؟
+
+# 11
+- intent: what_is_definition_of_nimsale_tahsili
+  examples: |
+    - منظورت از نیمسال تحصیلی چیست؟
+    - نیمسال تحصیلی؟!!
+    - نیمسال تحصیلی چیه؟
+    - نیمسال تحصیلی چیه اصلا
+    - آیا منظور بازه زمانی تعیین شده كه شامل 16 هفته آموزش و 2 هفته امتحانات پایانی است؟
+    - منظور نیمسال تحصیلی که می‌شناسیم هست؟
+    - منظورت نیمسال تحصیلی مثل ترم است؟
+    - منظورت استاد راهنمای تحصیلی مثل ترم هست؟
+    - منظور از نیمسال تحصیلی چیست؟ 
+    - نیمسال تحصیلی یعنی چی؟
+    - نیمسال تحصیلی یعنی چه کسی؟
+    - نیمسال تحصیلی؟
+    - نیمسال تحصیلیِ
+    - نیمسال تحصیلی؟
+    - منظورت از نیمسال تحصیلی کدام نیمسال تحصیلی هست؟
+    - منظور از نیمسال تحصیلی کدوم نیمسال تحصیلی هست
+    - کدوم نیمسال تحصیلی؟
+    - کدام نیمسال تحصیلی؟
+
+# 12
+- intent: what_is_definition_of_doreh_tabestani
+  examples: |
+    - دوره تابستانی: دوره زمانی كه شامل 6 هفته آموزش و 1 هفته امتحانات پایانی است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 13
+- intent: what_is_definition_of_barnameh_darsi
+  examples: |
+    - برنامه درسی: مجموعه به هم پیوسته‌ای از دروس هر رشته تحصیلی كه دارای هدف مشخصی بوده و مصوب مراجع قانونی است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 14
+- intent: what_is_definition_of_vahed_darsi
+  examples: |
+    - واحد درسی: ارزش مقداری درسی، كه مفاد آن برای هر واحد نظری 16 ساعت، عملی یا آزمایش گاهی 32 ساعت، كارگاهی یا عملیات میدانی(بازدید علمی) 48 ساعت، كارورزی یا كار در عرصه 64 ساعت و كارآموزی یا مهارت‌آموزی 120 ساعت در طول یک نیمسال تحصیلی یا بازه تابستانی است و طبق برنامه درسی مصوب اجرا میشود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 15
+- intent: what_is_definition_of_darse_jobrani
+  examples: |
+    - درس جبرانی: درس/ دروسی كه با تایید گروه گذراندن آن در آغاز دوره تحصیلی مربوط برای رفع كمبود دانش یا مهارت دانشجو ضروری تشخیص داده میشود و یا به دلیل ارتباط با موضوع پایان‌نامه/ رساله، به تشخیص استاد راهنما، موظف به گذراندن آن است. درس جبرانی باید از مقطع قبلی باشد ولی نمره قبولی در آن درس یا دروس بر اساس مقطع فعلی دانشجو است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 16
+- intent: what_is_definition_of_darse_pishniaz
+  examples: |
+    - درس پیش‌نیاز: درسی است كه درک مطلب آن برای یادگیری درس یا دروس دیگری كه وابسته آن نامیده می شود ضروری است و باید قبل از آن درس یا دروس اخذ گردد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 17
+- intent: what_is_definition_of_mashrooti
+  examples: |
+    - مشروطی: وضعیت تحصیلی كه دانشجو در یک نیمسال معدل كمتر از 12را در دورە تحصیلی كارشناسی و معدل كمتر از 14 را در دورە تحصیلی كارشناسی ارشد كسب نماید.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 18
+- intent: what_is_definition_of_reshteh_tahsili
+  examples: |
+    - رشته تحصیلی: یک شاخه فرعی از شاخه‌های علمی كه به لحاظ موضوع دارای قلمرو مشخص و متمایز از سایر شاخه‌های علمی است و به احراز دانش تخصصی، مهارت یا كارآمدی معینی می‌انجامد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 19
+- intent: what_is_definition_of_gerayesh_tahsili
+  examples: |
+    - گرایش تحصیلی: هر كدام ازشاخه های یک رشته تحصیلی كه ناظر بر تخصص آن باشد. اختلاف دروس در 2 گرایش از یک رشته نباید از 7 درصد كل واحدهای رشته كمتر و از 30 درصد كل واحدها بیشتر باشد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 20
+- intent: what_is_definition_of_morakhasi_tahsili
+  examples: |
+    - مرخصی تحصیلی: مدت زمان مشخصی كه دانشجو برابر ضوابط معین به طور موقت به تحصیل اشتغال ندارد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 21
+- intent: what_is_definition_of_enserafe_tahsili
+  examples: |
+    - انصراف تحصیلی: فرآیندی كه در آن دانشجو به طور اختیاری از ادامه تحصیل خودداری میكند.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 22
+- intent: what_is_definition_of_doreh_kardani_peyvasteh
+  examples: |
+    - دوره کاردانی پیوسته: دوره تحصیلی كه دارندگان مدرم دیپلم (در نظام آموزشی دارای پیش‌دانشگاهی بدون نیاز به گذراندن دوره پیش‌دانشگاهی) به آن وارد می‌شوند و مستلزم گذراندن حداقل 68 واحد درسی طبق برنامه مصوب است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 23
+- intent: what_is_definition_of_doreh_kardani_napeyvasteh
+  examples: |
+    - دوره کاردانی ناپیوسته: دوره تحصیلی پس از دوره متوسطه، كه فرد پس از اخذ دیپلم و گذراندن دوره پیش‌دانشگاهی (در نظام آموزشی دارای پیش‌دانشگاهی) به آن وارد می‌شود و مستلزم گذراندن حداقل 68 واحد درسی طبق برنامه مصوب است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 24
+- intent: what_is_definition_of_doreh_karshenasi_peyvasteh
+  examples: |
+    - دوره کارشناسی پیوسته: دوره تحصیلی كه مستلزم گذراندن حداقل 130 و حداكثر 140واحد درسی طبق برنامه درسی مصوب است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 25
+- intent: what_is_definition_of_doreh_karshenasi_napeyvasteh
+  examples: |
+    - دوره کارشناسی ناپیوسته: دوره تحصیلی كه پس از دوره كاردانی(پیوسته و ناپیوسته) آغاز شده و مستلزم گذراندن حداقل 68 و حداكثر 72 واحد درسی طبق برنامه درسی مصوب است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 26
+- intent: what_is_definition_of_doreh_karshenasi_arshad
+  examples: |
+    - دوره کارشناسی ارشد: دوره تحصیلی كه پس از دوره كارشناسی آغاز می‌شود و مستلزم گذراندن 28 الی 32 واحد درسی می باشد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 27
+- intent: what_is_definition_of_doreh_doctoraye_takhasosi
+  examples: |
+    - دوره دکتری تخصصی: دوره تحصیلی كه پس از دوره كارشناسی ارشد یا دكتری عمومی آغاز شده و دانشجو موظف به گذراندن 36 واحد درسی مشتمل بر رساله میباشد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 28
+- intent: what_is_definition_of_doreh_beynolmelali
+  examples: |
+    - دوره بین‌المللی: هر یک از دوره‌های تخصصی دكتری كه بر اساس ضوابط مصوب وزارت و با مشاركت مؤسسه‌های آموزش عالی و پژوهشی غیر ایرانی برگزار می‌شود. این دوره می تواند آموزشی-پژوهشی و یا پژوهش محور باشد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 29
+- intent: what_is_definition_of_paayannameh
+  examples: |
+    - پایان‌نامه: مستند علمی است كه در فرآیند تحصیل دانشجوی دوره كارشناسی ارشد و از طریق تحقیق در یک حوزه معین از رشته یا گرایش تحصیلی و با راهنمایی استاد(ان) راهنما و مشاور حسب مورد براساس استانداردهای پژوهشی تدوین می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 30
+- intent: what_is_definition_of_azmon_jame
+  examples: |
+    - آزمون جامع: آزمون تخصصی است كه پس از گذراندن واحدهای دوره آموزشی در دوره دكتری تخصصی، با هدف ارزشیابی آموخته های آموزشی و توانمندی های پژوهشی دانشجو برگزار می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 31
+- intent: what_is_definition_of_resaleh
+  examples: |
+    - رساله: گزارش مکتوب حاصل از فعالیت پژوهشی دانشجوی دوره دكتری تخصصی است كه در زمینه مشخصی از یک رشته تحصیلی و با راهنمایی استاد(ان) راهنما و مشاور تدوین می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 32
+- intent: what_is_definition_of_heyat_daavaran
+  examples: |
+    - هیأت داوران: اعضای هیات علمی دارای مدرک دكتری تخصصی و یا متخصصان حرفه‌ای دارای صلاحیت دانشگاهی، كه برای ارزیابی كمی و كیفی پایاننامه/رساله مطابق دستورالعمل اجرایی مصوب دانشگاه انتخاب می‌شوند.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 33
+- intent: what_is_definition_of_shiveh_amozeshi
+  examples: |
+    - شیوه آموزشی-پژوهشی: شیوه‌ای از تحصیل در دوره كارشناسی ارشد و دكتری تخصصی كه برنامه درسی مربوط به آن، علاوه بر واحدهای درسی، مشتمل بر اجرای یک پروژه تحقیقاتی است كه منجر به پایان‌نامه یا رساله می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 34
+- intent: what_is_definition_of_shiveh_amozeshi
+  examples: |
+    - شیوه آموزشی: شیوه‌ای از تحصیل صرفا در دوره های كارشناسی ارشد آموزش الکترونیکی كه دانشجو پس از گذراندن واحدهای درسی و بدون گذراندن پایان‌نامه، دانش‌آموخته می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 35
+- intent: what_is_definition_of_ostad_raahnama
+  examples: |
+    - استاد راهنما: عضو هیأت علمی دارای مدرک دكتری تخصصی(D.Ph) كه مسئولیت راهنمایی دانشجو را در انجام پایان‌نامه/رساله بر عهده دارد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 36
+- intent: what_is_definition_of_ostad_moshaver
+  examples: |
+    - استاد مشاور: عضو هیأت علمی دارای مدرک دكتری تخصصی(D.Ph) و یا متخصص حرفه‌ای كه مسئولیت مشاوره دانشجو را در انجام پایان‌نامه/رساله بر عهده دارد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 37
+- intent: what_is_definition_of_motekhases_herfehei
+  examples: |
+    - متخصص حرفه‌ای: صاحب نظر یا كارشناس باتجربه غیرهیات علمی با مدرک تحصیلی دكتری تخصصی(D.Ph) در سایر بخش‌های جامعه كه دارای مهارت و صلاحیت حرفه‌ای مورد تایید شورای تحصیلات تکمیلی گروه می‌باشد. در شرایط خاص، در پایان‌نامه‌های تقاضامحور یا كاربردی مقطع كارشناسی ارشد استفاده از متخصصان حرفه‌ای با مدرک كارشناسی ارشد و همچنین مربی باسابقه دانشگاه فردوسی مشهد در سمت مشاور پایان‌نامه بلامانع است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 38
+- intent: what_is_definition_of_gorouh_azmayeshi
+  examples: |
+    - گروه آزمایشی: مجموعه رشته‌های مختلف تحصیلی در دوره متوسطه است كه با توجه به مواد آزمونی مشترک دسته‌بندی می‌شوند.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 39
+- intent: what_is_definition_of_gorouh_amouzeshi
+  examples: |
+    - گروه آموزشی: بنیادی‌ترین واحد سازمانی دانشگاهی، متشکل از تعدادی عضو هیأت علمی با تخصص مشترک در یک رشته علمی خاص یا چند رشته / های متجانس كه به منظور ایجاد و اجرای آن رشته تحصیلی در دانشگاه تشکیل می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 40
+- intent: what_is_definition_of_shooraye_amoozeshi_daneshgah
+  examples: |
+    - شورای آموزشی دانشگاه: یکی از شوراهای تخصصی در نخستین سطح سیاست گذاری و برنامه‌ریزی راهبردی در امور آموزشی و تحصیلات تکمیلی دانشگاه است كه به منظور ایجاد هماهنگی و تسهیل در امور اجرایی مرتبط با تحصیل دانشجو به ریاست معاون آموزشی دانشگاه تشکیل می‌شود. شورای آموزشی دانشگاه می‌تواند اختیارات مشخص شده در این شیوه‌نامه را به دانشکده یا كمیته منتخب شورای آموزشی تفویض كند.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# 41
+- intent: what_is_definition_of_danesh_amoukhteh
+  examples: |
+    - دانش‌آموخته: فردی است كه یکی از رشته یا گرایش‌های دوره‌های تحصیلی مصوب را با موفقیت به پایان رسانده و برابر ضوابط معین، گواهی یا مدرک تحصیلی مربوطه را دریافت كرده است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# General subjects (related to all academic levels)
+
+# Article 3
+- intent: university_entry_requirements
+  examples: |
+    - ماده ۳- شرط ورود به دانشگاه دارا بودن مدرکِ پایانِ دوره قبلی است كه باید مورد تایید وزارت علوم، تحقیقات و فنّاوری یا وزارت بهداشت، درمان و آموزش پزشکی باشد. علاوه بر آن، شایستگی‌های عمومی و اختصاصی از طریق قبولی قطعی در آزمون ورودی و یا كسب پذیرش از دانشگاه طبق مقررات مصوب وزارت احراز خواهد شد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# Subsection 1
+- intent: talent_admission_regulations
+  examples: |
+    - تبصره ۱- پذیرش دانشجویانِ مشمول مقررات استعدادهای درخشان طبق مصوبات شورای هدایت استعدادهای درخشان وزارت انجام می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 2
+- intent: transfer_regulations_for_students_abroad
+  examples: |
+    - تبصره ۲- دانشجوی ایرانی مشغول به تحصیل در موسسه خارج از كشور می‌تواند مطابق آیین‌نامه وزارتی انتقال دانشجویان از خارج به داخل، جهت ادامه تحصیل به دانشگاه منتقل شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+
+# Subsection 3
+- intent: foreign_language_ability_for_PhD_students
+  examples: |
+    - تبصره ۳- احراز توانایی در زبان خارجی طبق مصوبات شورای آموزشی دانشگاه (پیوست 1-1) در خصوص دانشجویان دوره دكتری تخصصی الزامی است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 4
+- intent: persian_language_ability_foreign_student
+  examples: |
+    - تبصره ۴- دانشجوی غیر ایرانی پذیرش شده، در بدو ورود، ملزم به كسب حد نصاب نمره زبان فارسی است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 4
+- intent: education_system_in_university
+  examples: |
+    - ماده ۴- آموزش در دانشگاه مبتنی بر نظام واحدی و به زبان فارسی انجام می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 1
+- intent: non_persian_language_courses_in_university
+  examples: |
+    - تبصره- دانشگاه مجاز است برنامه درسی مصوب شورای عالی برنامه‌ریزی آموزشی و یا برنامه‌های بازنگری شده در هر یک از دانشگاه‌های سطح یک را با رعایت ضوابط و مقررات مربوطه و در صورت امکان به زبان غیر فارسی ارائه نماید.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 5
+- intent: authorized_courses_in_university
+  examples: |
+    - ماده ۵- دانشگاه موظف است فقط برای دوره‌هایی دانشجو بپذیرد كه مجوز آن را از مراجع قانونی دریافت نموده و صرفا برنامه‌های درسی را اجرا نماید كه در چارچوب ضوابط وزارت است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 1
+- intent: virtual_courses_in_bachelors_degree
+  examples: |
+    - تبصره- دانشگاه می‌تواند با همکاری گروه‌ها، حداكثر پنجاه درصد از واحدهای درسی دوره كارشناسی را با اولویت دروس پایه و عمومی، ضمن رعایت استانداردهای مصوب وزارت و تأكید بر محتوای الکترونیکی، به صورت مجازی (الکترونیکی) ارائه نماید.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 6
+- intent: attendance_in_classes_is_required
+  examples: |
+    - ماده ۶- حضور دانشجو در تمام جلسات كلاس درس دوره‌های تحصیلی حضوری، الکترونیکی و تركیبی ضروری است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 1
+- intent: absence_policy_for_students_with_continuous_grades
+  examples: |
+    - تبصره ۱- در صورتی كه دانشجو در درسی بیش از  ۳/۱۶ (سه شانزدهم) جلسات غیبت كند، اما در آن درس نمره مستمر داشته باشد، امکان درج نمره تا ۸ برای كارشناسی، تا ۱۰ برای كارشناسی ارشد و تا ۱۲ برای دكتری تخصصی میسر است؛ در غیر این صورت، نمره درس فوق صفر منظور خواهد شد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 2
+- intent: student_with_continuous_grade_can_miss_final_exam
+  examples: |
+    - تبصره ۲- اگر دانشجو در جلسه امتحان پایان نیمسال درس شركت نکند ولی نمره مستمر داشته باشد، فقط از نمره پایان ترم محروم می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 3
+- intent: course_waiver_for_justifiable_absence
+  examples: |
+    - تبصره ۳- چنانچه غیبت دانشجو در جلسه امتحان پایان نیمسال تحصیلی به تشخیص كمیته منتخب شورا ی آموزشی دانشگاه موجه تشخیص داده شد، آن درس حذف می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 7
+- intent: course_sequence_is_determined_by_group
+  examples: |
+    - ماده ۷- چگونگی و ترتیب ارائه تمامی دروس هر دوره و هر رشته، ضمن رعایت پیش‌نیازی (تقدم و تأخر) دروس طبق برنامه درسی مصوب، در اختیار گروه است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 1
+- intent: course_sequence_policy_is_not_applicable_for_last_semester_student
+  examples: |
+    - تبصره- دانشجو در آخرین نیمسال تحصیلی از رعایت مقررات مربوط به این ماده معاف است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 8
+- intent: end_of_semester_exam_is_required_for_theoretical_courses
+  examples: |
+    - ماده ۸- برگزاری امتحان پایانی در هر نیمسال به صورت كتبی یا شفاهی برای درس‌های نظری الزامی است و برگزاری جلسه امتحان جزء هفته های آموزشی به حساب می آید.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 1
+- intent: course_grade_is_unchangeable_after_professor_approval
+  examples: |
+    - تبصره- نمره درس پس از تایید نهایی استاد غیر قابل تغییر است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 9
+- intent: free_education_is_limited_to_one_major
+  examples: |
+    - ماده ۹- آموزش رایگان برای هر دانشجو، در هر دوره تحصیلی، صرفا یکبار و در یک رشته تحصیلی امکانپذیر است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 1
+- intent: student_can_drop_one_theoretical_course_before_exams
+  examples: |
+    - تبصره ۱- با موافقت استاد درس و تأیید گروه، دانشجو می‌تواند تا دو هفته قبل از شروع امتحانات پایان نیمسال، فقط یک درس نظری را حذف كند، به شرط آن كه تعداد واحدهای باقیمانده دانشجو در آن نیمسال كمتر از حد نصاب لازم دوره تحصیلی مربوطه نشود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 2
+- intent: cost_of_withdrawing_from_classes_for_free_education_students
+  examples: |
+    - تبصره ۲- دانشجوی مشمول آموزش رایگان، در صورت حذف درس یا عدم كسب نمره قبولی در هر درس، موظف به پرداخت هزینه درس(ها) مطابق تعرفه دانشجوی شهریه‌پرداز دانشگاه است. در صورت تشخیص موجه بودن حذف درس(ها) توسط كمیته منتخب شورای آموزشی دانشگاه، دانشجوی مشمول آموزش رایگان ملزم به پرداخت شهریه متغیر درس حذف شده نیست. در صورتی كه واحدهای باقیمانده دانشجو كمتر از حداقل واحد انتخابی مجاز شود، نیمسال مذكور در رتبه بندی دانشجو در همان نیمسال و سال تحصیلی تاتیر نداشته و به عنوان یک نیمسال كامل جزو سنوات تحصیلی وی محسوب شده و در مشروط شدن دانشجو تأثیر دارد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 10
+- intent: semester_withdrawal_details
+  examples: |
+    - ماده ۱۰- حذف نیمسال تحصیلی با درخواست دانشجو، از طریق پرتال دانشجویی و پیگیری تأیید سایر مراحل درخواست ، ضمن احتساب در سنوات تحصیلی، حداكثر تا قبل از تاریخ شروع امتحانات مطابق تقویم آموزشی دانشگاه امکانپذیر است. دانشجوی مشمول آموزش رایگان، در صورت حذف غیر موجه، موظف به پرداخت هزینه متغیر دروس حذف شده مطابق تعرفه دانشجویان شهریه‌پرداز دانشگاه می‌باشد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 11
+- intent: withdrawal_from_studies_procedure
+  examples: |
+    - ماده ۱۱- دانشجوی متقاضی انصراف از تحصیل، باید از طریق پرتال دانشجویی برای انصراف از تحصیل اقدام و مراحل بعدی را تا حصول نتیجه و تصفیه حساب پیگیری نماید. دانشجو مجاز است فقط برای یکبار و تا دو ماه پس از تاریخ درخواست، تقاضای انصراف خود را پس بگیرد.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# Subsection 1
+- intent: withdrawal_from_studies_policy_for_paying_students
+  examples: |
+    - تبصره- در صورت ارائه درخواست انصراف از تحصیل توسط دانشجوی شهریه‌پرداز قبل از شروع نیمسال تحصیلی مندرج در تقویم آموزشی دانشگاه، هزینه نیمسال از وی دریافت نمی‌شود. اما در صورت ارائه درخواست انصراف از هنگام شروع نیمسال تا قبل از تاریخ حذف و اضافه، وی ملزم به پرداخت شهریه ثابت است. چنانچه زمان ارائه درخواست انصراف بعد از تاریخ حذف و اضافه باشد، در صورت انتخاب واحد توسط دانشجو ، شهریه ثابت و متغیر نیمسال محاسبه و از وی دریافت می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 12
+- intent: consequences_of_not_choosing_units_for_students
+  examples: |
+    - ماده ۱۲- عدم انتخاب واحد دانشجو (مطابق تقویم آموزشی دانشگاه) در هر نیمسال تحصیلی، انصراف از تحصیل محسوب می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 13
+- intent: return_to_studies_policy_for_withdrawn_students
+  examples: |
+    - ماده ۱۳- تصمیم‌گیری در مورد بازگشت به تحصیل دانشجوی منصرف از تحصیل بر عهدە دانشگاه است.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+
+
+# Article 14
+- intent: decision_making_authority_for_educational_affairs
+  examples: |
+    - ماده ۱۴- برنامه‌ریزی و تصمیم‌گیری درباره تقویم آموزشی، چگونگی اعلام و ثبت نمره، زمان حذف و اضافه، حذف اضطراری دروس، نحوه اعتراض به نتایج امتحانات، مهلت تجدید نظر و غیره طبق شیوه‌نامه اجرایی مصوب دانشگاه انجام می‌شود.
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+
+# - intent: 
+#   examples: |
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     - 
+#     -  
+

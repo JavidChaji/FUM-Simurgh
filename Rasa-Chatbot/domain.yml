@@ -1,0 +1,495 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+  # Chapter 1
+
+  # Set of Academic Rules and Regulations
+  
+  # Definitions
+  
+  # 1
+  - what_is_definition_of_vezarat
+  
+  # 2
+  - what_is_definition_of_daneshgah
+  
+  # 3
+  - what_is_definition_of_modares
+  
+  # 4
+  - what_is_definition_of_daneshjou
+  
+  # 5
+  - what_is_definition_of_amouzeshe_rayegan
+  
+  # 6
+  - what_is_definition_of_daneshjoue_shahriehpardaz
+  
+  # 7
+  - what_is_definition_of_hozouri
+  
+  # 8
+  - what_is_definition_of_gheire_hozouri
+  
+  # 9
+  - what_is_definition_of_nimeh_hozouri
+  
+  # 10
+  - what_is_definition_of_ostad_rahnamaye_tahsili
+  
+  # 11
+  - what_is_definition_of_nimsale_tahsili
+  
+  # 12
+  - what_is_definition_of_doreh_tabestani
+  
+  # 13
+  - what_is_definition_of_barnameh_darsi
+  
+  # 14
+  - what_is_definition_of_vahed_darsi
+  
+  # 15
+  - what_is_definition_of_darse_jobrani
+  
+  # 16
+  - what_is_definition_of_darse_pishniaz
+  
+  # 17
+  - what_is_definition_of_mashrooti
+  
+  # 18
+  - what_is_definition_of_reshteh_tahsili
+
+  # 19
+  - what_is_definition_of_gerayesh_tahsili
+  
+  # 20
+  - what_is_definition_of_morakhasi_tahsili
+  
+  # 21
+  - what_is_definition_of_enserafe_tahsili
+  
+  # 22
+  - what_is_definition_of_doreh_kardani_peyvasteh
+  
+  # 23
+  - what_is_definition_of_doreh_kardani_napeyvasteh
+  
+  # 24
+  - what_is_definition_of_doreh_karshenasi_peyvasteh
+  
+  # 25
+  - what_is_definition_of_doreh_karshenasi_napeyvasteh
+  
+  # 26
+  - what_is_definition_of_doreh_karshenasi_arshad
+  
+  # 27
+  - what_is_definition_of_doreh_doctoraye_takhasosi
+  
+  # 28
+  - what_is_definition_of_doreh_beynolmelali
+  
+  # 29
+  - what_is_definition_of_paayannameh
+  
+  # 30
+  - what_is_definition_of_azmon_jame
+  
+  # 31
+  - what_is_definition_of_resaleh
+  
+  # 32
+  - what_is_definition_of_heyat_daavaran
+  
+  # 33
+  - what_is_definition_of_shiveh_amozeshi-pazhoheshi
+  
+  # 34
+  - what_is_definition_of_shiveh_amozeshi
+  
+  # 35
+  - what_is_definition_of_ostad_raahnama
+  
+  # 36
+  - what_is_definition_of_ostad_moshaver
+
+  # 37
+  - what_is_definition_of_motekhases_herfehei
+  
+  # 38
+  - what_is_definition_of_gorouh_azmayeshi
+  
+  # 39
+  - what_is_definition_of_gorouh_amouzeshi
+  
+  # 40
+  - what_is_definition_of_shooraye_amoozeshi_daneshgah
+  
+  # 41
+  - what_is_definition_of_danesh_amoukhteh
+
+  # Article 3
+  - university_entry_requirements
+  # Subsection 1
+  - talent_admission_regulations
+  # Subsection 2
+  - transfer_regulations_for_students_abroad
+  # Subsection 3
+  - foreign_language_ability_for_PhD_students
+  # Subsection 4
+  - persian_language_ability_foreign_student
+  
+  # Article 4
+  - education_system_in_university
+  # Subsection 1
+  - non_persian_language_courses_in_university
+  
+  # Article 5
+  - authorized_courses_in_university
+  # Subsection 1
+  - virtual_courses_in_bachelors_degree
+
+  # Article 6
+  - attendance_in_classes_is_required
+  # Subsection 1
+  - absence_policy_for_students_with_continuous_grades
+  # Subsection 2
+  - student_with_continuous_grade_can_miss_final_exam
+  # Subsection 3
+  - course_waiver_for_justifiable_absence
+  
+  # Article 7
+  - course_sequence_is_determined_by_group
+  # Subsection 1
+  - course_sequence_policy_is_not_applicable_for_last_semester_student
+  
+  # Article 8
+  - end_of_semester_exam_is_required_for_theoretical_courses
+  # Subsection 1
+  - course_grade_is_unchangeable_after_professor_approval
+  
+  # Article 9
+  - free_education_is_limited_to_one_major
+  # Subsection 1
+  - student_can_drop_one_theoretical_course_before_exams
+  # Subsection 2
+  - cost_of_withdrawing_from_classes_for_free_education_students
+  
+  # Article 10
+  - semester_withdrawal_details
+  
+  # Article 11
+  - withdrawal_from_studies_procedure
+  # Subsection 1
+  - withdrawal_from_studies_policy_for_paying_students
+  
+  # Article 12
+  - consequences_of_not_choosing_units_for_students
+  
+  # Article 13
+  - return_to_studies_policy_for_withdrawn_students
+  
+  # Article 14
+  - decision_making_authority_for_educational_affairs
+
+
+responses:
+  utter_greet:
+  - text: "سلام، چطور می‌تونم کمکت کنم؟"
+
+  utter_cheer_up:
+  - text: "اینم یه چیزی که حالت رو عوض کنه:"
+    image: "https://t3.ftcdn.net/jpg/05/80/23/06/360_F_580230656_7IhjBBONtq7tyT2nl0FgN9LyRzvK3Ton.jpg"
+
+  utter_did_that_help:
+  - text: "آیا کمک کننده بود؟"
+
+  utter_happy:
+  - text: "عالیه, ادامه بده!"
+
+  utter_goodbye:
+  - text: "خدانگهدار"
+  - text: "خداحافظ"
+  # - text: "بای بای"
+
+  utter_iamabot:
+  - text: "من یک ربات هستم, توسعه داده شده توسط Rasa."
+
+# Chapter 1
+
+# Set of Academic Rules and Regulations
+
+# Definitions
+
+# 1
+  utter_what_is_definition_of_vezarat:
+  - text: "وزارت: منظور وزارت علوم، تحقیقات و فناوری است."
+
+# 2
+  utter_what_is_definition_of_daneshgah:
+  - text: "دانشگاه: هر یک از دانشگاه ها و موسسه های آموزش عالی و پژوهشی)اعم از دولتی و غیردولتی( كه دارای مجوز تاسیس از مراجع ذیربط بوده و مجری هر یک/ یکی از دورههای كاردانی، كارشناسی ناپیوسته و پیوسته، كارشناسی ارشد، دكتری عمومی، دكتری تخصصی و دستیاری دورههای تخصصی هستند."
+
+# 3
+  utter_what_is_definition_of_modares:
+  - text: "مدرس: فردی كه در دانشگاه به آموزش و یاددهی مهارت به صورت تمام وقت، نیمه وقت یا پاره وقت اشتغال دارد."
+
+# 4
+  utter_what_is_definition_of_daneshjou:
+  - text: "فردی كه در یکی از دوره های آموزش عالی براساس ضوابط پذیرفته شده، و پس از تبت نام به تحصیل میپردازد."
+
+# 5
+  utter_what_is_definition_of_amouzeshe_rayegan:
+  - text: "آموزش رایگان: منظور تحصیل دانشجو در طول سنوات مجاز دوره آموزشی بدون پرداخت هزینه است. در صورتی كه دانشجوی مشمول آموزش رایگان ملزم به پرداخت هزینه شود، تعرفه آن مطابق دانشجوی شهریه‌پرداز نوبت دوم دانشگاه می‌باشد."
+
+# 6
+  utter_what_is_definition_of_daneshjoue_shahriehpardaz:
+  - text: "دانشجوی شهریه‌پرداز: دانشجویی است كه به ازای تحصیل در طول دوره تحصیلی ملزم به پرداخت هزینه مصوب از سوی دانشگاه مربوطه است ."
+
+# 7
+  utter_what_is_definition_of_hozouri:
+  - text: "حضوری: نوعی از آموزش كه دانشجو به صورت تمام وقت و با حضور در همه كلاس‌های درس دوره مربوط به فعالیت تحصیلی می‌پردازد. این نوع آموزش می تواند به صورت حضور فیزیکی در كلاس، الکترونیکی (برخط و غیر برخط) و یا تركیبی انجام شود."
+
+# 8
+  utter_what_is_definition_of_gheire_hozouri:
+  - text: "غیرحضوری: نوعی از آموزش كه دانشجو بدون حضور در كلاس درس به فعالیت تحصیلی می‌پردازد."
+
+# 9
+  utter_what_is_definition_of_nimeh_hozouri:
+  - text: "نیمه‌حضوری: نوعی از آموزش كه بخشی از آن حضوری و بخش دیگر غیرحضوری به انجام میرسد."
+
+# 10
+  utter_what_is_definition_of_ostad_rahnamaye_tahsili:
+  - text: "استاد راهنمای تحصیلی: عضو هیات علمی آگاه و مسلط به امور آموزشی، كه برای هدایت تحصیلی دانشجو از ابتدای تحصیل و از سوی گروه آموزشی انتخاب می‌شود."
+
+# 11
+  utter_what_is_definition_of_nimsale_tahsili:
+  - text: "نیمسال تحصیلی: بازه زمانی تعیین شده كه شامل 16 هفته آموزش و 2 هفته امتحانات پایانی است."
+
+# 12
+  utter_what_is_definition_of_doreh_tabestani:
+  - text: "دوره تابستانی: دوره زمانی كه شامل 6 هفته آموزش و 1 هفته امتحانات پایانی است."
+
+# 13
+  utter_what_is_definition_of_barnameh_darsi:
+  - text: "برنامه درسی: مجموعه به هم پیوسته‌ای از دروس هر رشته تحصیلی كه دارای هدف مشخصی بوده و مصوب مراجع قانونی است."
+
+# 14
+  utter_what_is_definition_of_vahed_darsi:
+  - text: "واحد درسی: ارزش مقداری درسی، كه مفاد آن برای هر واحد نظری 16 ساعت، عملی یا آزمایش گاهی 32 ساعت، كارگاهی یا عملیات میدانی(بازدید علمی) 48 ساعت، كارورزی یا كار در عرصه 64 ساعت و كارآموزی یا مهارت‌آموزی 120 ساعت در طول یک نیمسال تحصیلی یا بازه تابستانی است و طبق برنامه درسی مصوب اجرا میشود."
+
+# 15
+  utter_what_is_definition_of_darse_jobrani:
+  - text: "درس جبرانی: درس/ دروسی كه با تایید گروه گذراندن آن در آغاز دوره تحصیلی مربوط برای رفع كمبود دانش یا مهارت دانشجو ضروری تشخیص داده میشود و یا به دلیل ارتباط با موضوع پایان‌نامه/ رساله، به تشخیص استاد راهنما، موظف به گذراندن آن است. درس جبرانی باید از مقطع قبلی باشد ولی نمره قبولی در آن درس یا دروس بر اساس مقطع فعلی دانشجو است."
+
+# 16
+  utter_what_is_definition_of_darse_pishniaz:
+  - text: "درس پیش‌نیاز: درسی است كه درک مطلب آن برای یادگیری درس یا دروس دیگری كه وابسته آن نامیده می شود ضروری است و باید قبل از آن درس یا دروس اخذ گردد."
+
+# 17
+  utter_what_is_definition_of_mashrooti:
+  - text: "مشروطی: وضعیت تحصیلی كه دانشجو در یک نیمسال معدل كمتر از 12را در دورە تحصیلی كارشناسی و معدل كمتر از 14 را در دورە تحصیلی كارشناسی ارشد كسب نماید."
+
+# 18
+  utter_what_is_definition_of_reshteh_tahsili:
+  - text: "رشته تحصیلی: یک شاخه فرعی از شاخه‌های علمی كه به لحاظ موضوع دارای قلمرو مشخص و متمایز از سایر شاخه‌های علمی است و به احراز دانش تخصصی، مهارت یا كارآمدی معینی می‌انجامد."
+
+# 19
+  utter_what_is_definition_of_gerayesh_tahsili:
+  - text: "گرایش تحصیلی: هر كدام ازشاخه های یک رشته تحصیلی كه ناظر بر تخصص آن باشد. اختلاف دروس در 2 گرایش از یک رشته نباید از 7 درصد كل واحدهای رشته كمتر و از 30 درصد كل واحدها بیشتر باشد."
+
+# 20
+  utter_what_is_definition_of_morakhasi_tahsili:
+  - text: "مرخصی تحصیلی: مدت زمان مشخصی كه دانشجو برابر ضوابط معین به طور موقت به تحصیل اشتغال ندارد."
+
+# 21
+  utter_what_is_definition_of_enserafe_tahsili:
+  - text: "انصراف تحصیلی: فرآیندی كه در آن دانشجو به طور اختیاری از ادامه تحصیل خودداری میكند."
+
+# 22
+  utter_what_is_definition_of_doreh_kardani_peyvasteh:
+  - text: "دوره کاردانی پیوسته: دوره تحصیلی كه دارندگان مدرم دیپلم (در نظام آموزشی دارای پیش‌دانشگاهی بدون نیاز به گذراندن دوره پیش‌دانشگاهی) به آن وارد می‌شوند و مستلزم گذراندن حداقل 68 واحد درسی طبق برنامه مصوب است."
+
+# 23
+  utter_what_is_definition_of_doreh_kardani_napeyvasteh:
+  - text: "دوره کاردانی ناپیوسته: دوره تحصیلی پس از دوره متوسطه، كه فرد پس از اخذ دیپلم و گذراندن دوره پیش‌دانشگاهی (در نظام آموزشی دارای پیش‌دانشگاهی) به آن وارد می‌شود و مستلزم گذراندن حداقل 68 واحد درسی طبق برنامه مصوب است."
+
+# 24
+  utter_what_is_definition_of_doreh_karshenasi_peyvasteh:
+  - text: "دوره کارشناسی پیوسته: دوره تحصیلی كه مستلزم گذراندن حداقل 130 و حداكثر 140واحد درسی طبق برنامه درسی مصوب است."
+
+# 25
+  utter_what_is_definition_of_doreh_karshenasi_napeyvasteh:
+  - text: "دوره کارشناسی ناپیوسته: دوره تحصیلی كه پس از دوره كاردانی(پیوسته و ناپیوسته) آغاز شده و مستلزم گذراندن حداقل 68 و حداكثر 72 واحد درسی طبق برنامه درسی مصوب است."
+
+# 26
+  utter_what_is_definition_of_doreh_karshenasi_arshad:
+  - text: "دوره کارشناسی ارشد: دوره تحصیلی كه پس از دوره كارشناسی آغاز می‌شود و مستلزم گذراندن 28 الی 32 واحد درسی می باشد."
+
+# 27
+  utter_what_is_definition_of_doreh_doctoraye_takhasosi:
+  - text: "دوره دکتری تخصصی: دوره تحصیلی كه پس از دوره كارشناسی ارشد یا دكتری عمومی آغاز شده و دانشجو موظف به گذراندن 36 واحد درسی مشتمل بر رساله میباشد."
+
+# 28
+  utter_what_is_definition_of_doreh_beynolmelali:
+  - text: "دوره بین‌المللی: هر یک از دوره‌های تخصصی دكتری كه بر اساس ضوابط مصوب وزارت و با مشاركت مؤسسه‌های آموزش عالی و پژوهشی غیر ایرانی برگزار می‌شود. این دوره می تواند آموزشی-پژوهشی و یا پژوهش محور باشد."
+
+# 29
+  utter_what_is_definition_of_paayannameh:
+  - text: "پایان‌نامه: مستند علمی است كه در فرآیند تحصیل دانشجوی دوره كارشناسی ارشد و از طریق تحقیق در یک حوزه معین از رشته یا گرایش تحصیلی و با راهنمایی استاد(ان) راهنما و مشاور حسب مورد براساس استانداردهای پژوهشی تدوین می‌شود."
+
+# 30
+  utter_what_is_definition_of_azmon_jame:
+  - text: "آزمون جامع: آزمون تخصصی است كه پس از گذراندن واحدهای دوره آموزشی در دوره دكتری تخصصی، با هدف ارزشیابی آموخته های آموزشی و توانمندی های پژوهشی دانشجو برگزار می‌شود."
+
+# 31
+  utter_what_is_definition_of_resaleh:
+  - text: "رساله: گزارش مکتوب حاصل از فعالیت پژوهشی دانشجوی دوره دكتری تخصصی است كه در زمینه مشخصی از یک رشته تحصیلی و با راهنمایی استاد(ان) راهنما و مشاور تدوین می‌شود."
+
+# 32
+  utter_what_is_definition_of_heyat_daavaran:
+  - text: "هیأت داوران: اعضای هیات علمی دارای مدرک دكتری تخصصی و یا متخصصان حرفه‌ای دارای صلاحیت دانشگاهی، كه برای ارزیابی كمی و كیفی پایاننامه/رساله مطابق دستورالعمل اجرایی مصوب دانشگاه انتخاب می‌شوند."
+
+# 33
+  utter_what_is_definition_of_shiveh_amozeshi-pazhoheshi:
+  - text: "شیوه آموزشی-پژوهشی: شیوه‌ای از تحصیل در دوره كارشناسی ارشد و دكتری تخصصی كه برنامه درسی مربوط به آن، علاوه بر واحدهای درسی، مشتمل بر اجرای یک پروژه تحقیقاتی است كه منجر به پایان‌نامه یا رساله می‌شود."
+
+# 34
+  utter_what_is_definition_of_shiveh_amozeshi:
+  - text: "شیوه آموزشی: شیوه‌ای از تحصیل صرفا در دوره های كارشناسی ارشد آموزش الکترونیکی كه دانشجو پس از گذراندن واحدهای درسی و بدون گذراندن پایان‌نامه، دانش‌آموخته می‌شود."
+
+# 35
+  utter_what_is_definition_of_ostad_raahnama:
+  - text: "استاد راهنما: عضو هیأت علمی دارای مدرک دكتری تخصصی(D.Ph) كه مسئولیت راهنمایی دانشجو را در انجام پایان‌نامه/رساله بر عهده دارد."
+
+# 36
+  utter_what_is_definition_of_ostad_moshaver:
+  - text: "استاد مشاور: عضو هیأت علمی دارای مدرک دكتری تخصصی(D.Ph) و یا متخصص حرفه‌ای كه مسئولیت مشاوره دانشجو را در انجام پایان‌نامه/رساله بر عهده دارد."
+
+# 37
+  utter_what_is_definition_of_motekhases_herfehei:
+  - text: "متخصص حرفه‌ای: صاحب نظر یا كارشناس باتجربه غیرهیات علمی با مدرک تحصیلی دكتری تخصصی(D.Ph) در سایر بخش‌های جامعه كه دارای مهارت و صلاحیت حرفه‌ای مورد تایید شورای تحصیلات تکمیلی گروه می‌باشد. در شرایط خاص، در پایان‌نامه‌های تقاضامحور یا كاربردی مقطع كارشناسی ارشد استفاده از متخصصان حرفه‌ای با مدرک كارشناسی ارشد و همچنین مربی باسابقه دانشگاه فردوسی مشهد در سمت مشاور پایان‌نامه بلامانع است."
+
+# 38
+  utter_what_is_definition_of_gorouh_azmayeshi:
+  - text: "گروه آزمایشی: مجموعه رشته‌های مختلف تحصیلی در دوره متوسطه است كه با توجه به مواد آزمونی مشترک دسته‌بندی می‌شوند."
+
+# 39
+  utter_what_is_definition_of_gorouh_amouzeshi:
+  - text: "گروه آموزشی: بنیادی‌ترین واحد سازمانی دانشگاهی، متشکل از تعدادی عضو هیأت علمی با تخصص مشترک در یک رشته علمی خاص یا چند رشته / های متجانس كه به منظور ایجاد و اجرای آن رشته تحصیلی در دانشگاه تشکیل می‌شود."
+
+# 40
+  utter_what_is_definition_of_shooraye_amoozeshi_daneshgah:
+  - text: "شورای آموزشی دانشگاه: یکی از شوراهای تخصصی در نخستین سطح سیاست گذاری و برنامه‌ریزی راهبردی در امور آموزشی و تحصیلات تکمیلی دانشگاه است كه به منظور ایجاد هماهنگی و تسهیل در امور اجرایی مرتبط با تحصیل دانشجو به ریاست معاون آموزشی دانشگاه تشکیل می‌شود. شورای آموزشی دانشگاه می‌تواند اختیارات مشخص شده در این شیوه‌نامه را به دانشکده یا كمیته منتخب شورای آموزشی تفویض كند."
+
+# 41
+  utter_what_is_definition_of_danesh_amoukhteh:
+  - text: "دانش‌آموخته: فردی است كه یکی از رشته یا گرایش‌های دوره‌های تحصیلی مصوب را با موفقیت به پایان رسانده و برابر ضوابط معین، گواهی یا مدرک تحصیلی مربوطه را دریافت كرده است."
+
+# General subjects (related to all academic levels)
+
+# Article 3
+  utter_university_entry_requirements:
+  - text: "ماده ۳- شرط ورود به دانشگاه دارا بودن مدرکِ پایانِ دوره قبلی است كه باید مورد تایید وزارت علوم، تحقیقات و فنّاوری یا وزارت بهداشت، درمان و آموزش پزشکی باشد. علاوه بر آن، شایستگی‌های عمومی و اختصاصی از طریق قبولی قطعی در آزمون ورودی و یا كسب پذیرش از دانشگاه طبق مقررات مصوب وزارت احراز خواهد شد."
+# Subsection 1
+  utter_talent_admission_regulations:
+  - text: "تبصره ۱- پذیرش دانشجویانِ مشمول مقررات استعدادهای درخشان طبق مصوبات شورای هدایت استعدادهای درخشان وزارت انجام می‌شود."
+# Subsection 2
+  utter_transfer_regulations_for_students_abroad:
+  - text: "تبصره ۲- دانشجوی ایرانی مشغول به تحصیل در موسسه خارج از كشور می‌تواند مطابق آیین‌نامه وزارتی انتقال دانشجویان از خارج به داخل، جهت ادامه تحصیل به دانشگاه منتقل شود."
+# Subsection 3
+  utter_foreign_language_ability_for_PhD_students:
+  - text: "تبصره ۳- احراز توانایی در زبان خارجی طبق مصوبات شورای آموزشی دانشگاه (پیوست 1-1) در خصوص دانشجویان دوره دكتری تخصصی الزامی است."
+# Subsection 4
+  utter_persian_language_ability_foreign_student:
+  - text: "تبصره ۴- دانشجوی غیر ایرانی پذیرش شده، در بدو ورود، ملزم به كسب حد نصاب نمره زبان فارسی است."
+
+# Article 4
+  utter_education_system_in_university:
+  - text: "ماده ۴- آموزش در دانشگاه مبتنی بر نظام واحدی و به زبان فارسی انجام می‌شود."
+# Subsection 1
+  utter_non_persian_language_courses_in_university:
+  - text: "تبصره- دانشگاه مجاز است برنامه درسی مصوب شورای عالی برنامه‌ریزی آموزشی و یا برنامه‌های بازنگری شده در هر یک از دانشگاه‌های سطح یک را با رعایت ضوابط و مقررات مربوطه و در صورت امکان به زبان غیر فارسی ارائه نماید."
+
+# Article 5
+  utter_authorized_courses_in_university:
+  - text: "ماده ۵- دانشگاه موظف است فقط برای دوره‌هایی دانشجو بپذیرد كه مجوز آن را از مراجع قانونی دریافت نموده و صرفا برنامه‌های درسی را اجرا نماید كه در چارچوب ضوابط وزارت است."
+# Subsection 1
+  utter_virtual_courses_in_bachelors_degree:
+  - text: "تبصره- دانشگاه می‌تواند با همکاری گروه‌ها، حداكثر پنجاه درصد از واحدهای درسی دوره كارشناسی را با اولویت دروس پایه و عمومی، ضمن رعایت استانداردهای مصوب وزارت و تأكید بر محتوای الکترونیکی، به صورت مجازی (الکترونیکی) ارائه نماید."
+
+# Article 6
+  utter_attendance_in_classes_is_required:
+  - text: "ماده ۶- حضور دانشجو در تمام جلسات كلاس درس دوره‌های تحصیلی حضوری، الکترونیکی و تركیبی ضروری است."
+# Subsection 1
+  utter_absence_policy_for_students_with_continuous_grades:
+  - text: "تبصره ۱- در صورتی كه دانشجو در درسی بیش از  ۳/۱۶ (سه شانزدهم) جلسات غیبت كند، اما در آن درس نمره مستمر داشته باشد، امکان درج نمره تا ۸ برای كارشناسی، تا ۱۰ برای كارشناسی ارشد و تا ۱۲ برای دكتری تخصصی میسر است؛ در غیر این صورت، نمره درس فوق صفر منظور خواهد شد."
+# Subsection 2
+  utter_student_with_continuous_grade_can_miss_final_exam:
+  - text: "تبصره ۲- اگر دانشجو در جلسه امتحان پایان نیمسال درس شركت نکند ولی نمره مستمر داشته باشد، فقط از نمره پایان ترم محروم می‌شود."
+# Subsection 3
+  utter_course_waiver_for_justifiable_absence:
+  - text: "تبصره ۳- چنانچه غیبت دانشجو در جلسه امتحان پایان نیمسال تحصیلی به تشخیص كمیته منتخب شورا ی آموزشی دانشگاه موجه تشخیص داده شد، آن درس حذف می‌شود."
+
+# Article 7
+  utter_course_sequence_is_determined_by_group:
+  - text: "ماده ۷- چگونگی و ترتیب ارائه تمامی دروس هر دوره و هر رشته، ضمن رعایت پیش‌نیازی (تقدم و تأخر) دروس طبق برنامه درسی مصوب، در اختیار گروه است."
+# Subsection 1
+  utter_course_sequence_policy_is_not_applicable_for_last_semester_student:
+  - text: "تبصره- دانشجو در آخرین نیمسال تحصیلی از رعایت مقررات مربوط به این ماده معاف است."
+
+# Article 8
+  utter_end_of_semester_exam_is_required_for_theoretical_courses:
+  - text: "ماده ۸- برگزاری امتحان پایانی در هر نیمسال به صورت كتبی یا شفاهی برای درس‌های نظری الزامی است و برگزاری جلسه امتحان جزء هفته های آموزشی به حساب می آید."
+# Subsection 1
+  utter_course_grade_is_unchangeable_after_professor_approval:
+  - text: "تبصره- نمره درس پس از تایید نهایی استاد غیر قابل تغییر است."
+
+# Article 9
+  utter_free_education_is_limited_to_one_major:
+  - text: "ماده ۹- آموزش رایگان برای هر دانشجو، در هر دوره تحصیلی، صرفا یکبار و در یک رشته تحصیلی امکانپذیر است."
+# Subsection 1
+  utter_student_can_drop_one_theoretical_course_before_exams:
+  - text: "تبصره ۱- با موافقت استاد درس و تأیید گروه، دانشجو می‌تواند تا دو هفته قبل از شروع امتحانات پایان نیمسال، فقط یک درس نظری را حذف كند، به شرط آن كه تعداد واحدهای باقیمانده دانشجو در آن نیمسال كمتر از حد نصاب لازم دوره تحصیلی مربوطه نشود."
+# Subsection 2
+  utter_cost_of_withdrawing_from_classes_for_free_education_students:
+  - text: "تبصره ۲- دانشجوی مشمول آموزش رایگان، در صورت حذف درس یا عدم كسب نمره قبولی در هر درس، موظف به پرداخت هزینه درس(ها) مطابق تعرفه دانشجوی شهریه‌پرداز دانشگاه است. در صورت تشخیص موجه بودن حذف درس(ها) توسط كمیته منتخب شورای آموزشی دانشگاه، دانشجوی مشمول آموزش رایگان ملزم به پرداخت شهریه متغیر درس حذف شده نیست. در صورتی كه واحدهای باقیمانده دانشجو كمتر از حداقل واحد انتخابی مجاز شود، نیمسال مذكور در رتبه بندی دانشجو در همان نیمسال و سال تحصیلی تاتیر نداشته و به عنوان یک نیمسال كامل جزو سنوات تحصیلی وی محسوب شده و در مشروط شدن دانشجو تأثیر دارد."
+
+# Article 10
+  utter_semester_withdrawal_details:
+  - text: "ماده ۱۰- حذف نیمسال تحصیلی با درخواست دانشجو، از طریق پرتال دانشجویی و پیگیری تأیید سایر مراحل درخواست ، ضمن احتساب در سنوات تحصیلی، حداكثر تا قبل از تاریخ شروع امتحانات مطابق تقویم آموزشی دانشگاه امکانپذیر است. دانشجوی مشمول آموزش رایگان، در صورت حذف غیر موجه، موظف به پرداخت هزینه متغیر دروس حذف شده مطابق تعرفه دانشجویان شهریه‌پرداز دانشگاه می‌باشد."
+
+# Article 11
+  utter_withdrawal_from_studies_procedure:
+  - text: "ماده ۱۱- دانشجوی متقاضی انصراف از تحصیل، باید از طریق پرتال دانشجویی برای انصراف از تحصیل اقدام و مراحل بعدی را تا حصول نتیجه و تصفیه حساب پیگیری نماید. دانشجو مجاز است فقط برای یکبار و تا دو ماه پس از تاریخ درخواست، تقاضای انصراف خود را پس بگیرد."
+# Subsection 1
+  utter_withdrawal_from_studies_policy_for_paying_students:
+  - text: "تبصره- در صورت ارائه درخواست انصراف از تحصیل توسط دانشجوی شهریه‌پرداز قبل از شروع نیمسال تحصیلی مندرج در تقویم آموزشی دانشگاه، هزینه نیمسال از وی دریافت نمی‌شود. اما در صورت ارائه درخواست انصراف از هنگام شروع نیمسال تا قبل از تاریخ حذف و اضافه، وی ملزم به پرداخت شهریه ثابت است. چنانچه زمان ارائه درخواست انصراف بعد از تاریخ حذف و اضافه باشد، در صورت انتخاب واحد توسط دانشجو ، شهریه ثابت و متغیر نیمسال محاسبه و از وی دریافت می‌شود."
+
+# Article 12
+  utter_consequences_of_not_choosing_units_for_students:
+  - text: "ماده ۱۲- عدم انتخاب واحد دانشجو (مطابق تقویم آموزشی دانشگاه) در هر نیمسال تحصیلی، انصراف از تحصیل محسوب می‌شود."
+
+# Article 13
+  utter_return_to_studies_policy_for_withdrawn_students:
+  - text: "ماده ۱۳- تصمیم‌گیری در مورد بازگشت به تحصیل دانشجوی منصرف از تحصیل بر عهدە دانشگاه است."
+
+# Article 14
+  utter_decision_making_authority_for_educational_affairs:
+  - text: "ماده ۱۴- برنامه‌ریزی و تصمیم‌گیری درباره تقویم آموزشی، چگونگی اعلام و ثبت نمره، زمان حذف و اضافه، حذف اضطراری دروس، نحوه اعتراض به نتایج امتحانات، مهلت تجدید نظر و غیره طبق شیوه‌نامه اجرایی مصوب دانشگاه انجام می‌شود."
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

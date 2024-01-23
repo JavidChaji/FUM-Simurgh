@@ -1,0 +1,50 @@
+[
+  {
+    "text": "خدانگهدار",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.41615617275238037
+    }
+  },
+  {
+    "text": "Exit",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "canthelp",
+      "confidence": 0.8392508029937744
+    }
+  },
+  {
+    "text": "عالی",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.5121344327926636
+    }
+  },
+  {
+    "text": "Sweet",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.7972372174263
+    }
+  },
+  {
+    "text": "not bad",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.7780172824859619
+    }
+  },
+  {
+    "text": "very bad",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.8505781292915344
+    }
+  }
+]

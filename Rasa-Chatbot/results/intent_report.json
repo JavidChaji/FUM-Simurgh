@@ -1,0 +1,575 @@
+{
+  "what_is_definition_of_paayannameh": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_doreh_kardani_peyvasteh": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_gheire_hozouri": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_vahed_darsi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 0.9878048780487805,
+    "f1-score": 0.9938650306748467,
+    "support": 246.0,
+    "confused_with": {
+      "mood_great": 1,
+      "react_negative": 1
+    }
+  },
+  "what_is_definition_of_doreh_karshenasi_peyvasteh": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "non_persian_language_courses_in_university": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "end_of_semester_exam_is_required_for_theoretical_courses": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "react_negative": {
+    "precision": 0.9591836734693877,
+    "recall": 1.0,
+    "f1-score": 0.9791666666666666,
+    "support": 47.0,
+    "confused_with": {}
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6.0,
+    "confused_with": {}
+  },
+  "canthelp": {
+    "precision": 0.9629629629629629,
+    "recall": 1.0,
+    "f1-score": 0.9811320754716981,
+    "support": 26.0,
+    "confused_with": {}
+  },
+  "course_sequence_is_determined_by_group": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "cost_of_withdrawing_from_classes_for_free_education_students": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "virtual_courses_in_bachelors_degree": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "withdrawal_from_studies_policy_for_paying_students": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_shooraye_amoozeshi_daneshgah": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_doreh_doctoraye_takhasosi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_gorouh_azmayeshi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_enserafe_tahsili": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "consequences_of_not_choosing_units_for_students": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_resaleh": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "persian_language_ability_foreign_student": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_doreh_beynolmelali": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "foreign_language_ability_for_PhD_students": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_gerayesh_tahsili": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_nimsale_tahsili": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_shiveh_amozeshi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2.0,
+    "confused_with": {}
+  },
+  "thank": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 48.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_daneshjoue_shahriehpardaz": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 18.0,
+    "confused_with": {}
+  },
+  "education_system_in_university": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_ostad_moshaver": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_doreh_kardani_napeyvasteh": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "mood_great": {
+    "precision": 0.9333333333333333,
+    "recall": 1.0,
+    "f1-score": 0.9655172413793104,
+    "support": 14.0,
+    "confused_with": {}
+  },
+  "course_waiver_for_justifiable_absence": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "attendance_in_classes_is_required": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "withdrawal_from_studies_procedure": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_ostad_raahnama": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "transfer_regulations_for_students_abroad": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "absence_policy_for_students_with_continuous_grades": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_heyat_daavaran": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 178.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_doreh_karshenasi_napeyvasteh": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_nimeh_hozouri": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17.0,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 0.96,
+    "f1-score": 0.9795918367346939,
+    "support": 50.0,
+    "confused_with": {
+      "canthelp": 1,
+      "react_positive": 1
+    }
+  },
+  "what_is_definition_of_ostad_rahnamaye_tahsili": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_azmon_jame": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 1.0,
+    "recall": 0.9905660377358491,
+    "f1-score": 0.9952606635071091,
+    "support": 106.0,
+    "confused_with": {
+      "react_negative": 1
+    }
+  },
+  "what_is_definition_of_motekhases_herfehei": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_vezarat": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 15.0,
+    "confused_with": {}
+  },
+  "student_can_drop_one_theoretical_course_before_exams": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "react_positive": {
+    "precision": 0.9701492537313433,
+    "recall": 1.0,
+    "f1-score": 0.9848484848484849,
+    "support": 65.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_hozouri": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_doreh_karshenasi_arshad": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "course_grade_is_unchangeable_after_professor_approval": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "return_to_studies_policy_for_withdrawn_students": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "student_with_continuous_grade_can_miss_final_exam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "talent_admission_regulations": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_amouzeshe_rayegan": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17.0,
+    "confused_with": {}
+  },
+  "mood_unhappy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_doreh_tabestani": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "course_sequence_policy_is_not_applicable_for_last_semester_student": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_reshteh_tahsili": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "explain": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 16.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_darse_jobrani": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "university_entry_requirements": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "authorized_courses_in_university": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "decision_making_authority_for_educational_affairs": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_gorouh_amouzeshi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "free_education_is_limited_to_one_major": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_danesh_amoukhteh": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_daneshgah": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_morakhasi_tahsili": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_modares": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 18.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_darse_pishniaz": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_barnameh_darsi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_mashrooti": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "semester_withdrawal_details": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1.0,
+    "confused_with": {}
+  },
+  "what_is_definition_of_daneshjou": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 18.0,
+    "confused_with": {}
+  },
+  "accuracy": 0.9943396226415094,
+  "macro avg": {
+    "precision": 0.9977644772243209,
+    "recall": 0.9992098835357004,
+    "f1-score": 0.9984536153754207,
+    "support": 1060.0
+  },
+  "weighted avg": {
+    "precision": 0.99457079042387,
+    "recall": 0.9943396226415094,
+    "f1-score": 0.9943685659476978,
+    "support": 1060.0
+  },
+  "micro avg": {
+    "precision": 0.9943396226415094,
+    "recall": 0.9943396226415094,
+    "f1-score": 0.9943396226415094,
+    "support": 1060.0
+  }
+}
