@@ -89,8 +89,7 @@ Technologies and Tools Utilized in this Project
 
 ### Prerequisites
 
-<details>
-  <summary><h4> Rocket.Chat Prerequisites </h4></summary>
+<h4> Rocket.Chat Prerequisites </h4>
 
 
 * npm
@@ -149,10 +148,8 @@ Technologies and Tools Utilized in this Project
     ```
 
 ---
-</details>
 
-<details>
-  <summary><h4> Rasa Prerequisites </h4></summary>
+<h4> Rasa Prerequisites </h4>
 
 <!-- > [!WARNING] -->
 > <picture>
@@ -205,10 +202,8 @@ these steps are for linux
         ```sh
         python -m rasa --init
         ```
-</details>
 
-<details>
-  <summary><h4> Rasa and Rocket.Chat Connection </h4></summary>
+<h4> Rasa and Rocket.Chat Connection </h4>
   
 ### 2. Rocket.Chat Bot User Configurations
 
@@ -349,8 +344,6 @@ Channel: all_direct_messages
 URLs: http://bot_rasa:5005/webhooks/rocketchat/webhook
 Post as: bot_rasa
 ```
-</details>
-
         
 ### Installation
 
