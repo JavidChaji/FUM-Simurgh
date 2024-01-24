@@ -67,6 +67,8 @@
 ## About The Project
 
 [![Product Screen Shot][Product-Screenshot]][Product-URL]
+[![Exact Product Screen Shot][Exact-Product-Screenshot]][Exact-Product-URL]
+
 
 Simurgh is your intelligent chatbot companion designed to assist Ferdowsi University of Mashhad students in finding answers to their educational and administrative queries. With Simurgh's help, navigating the university's academic landscape becomes effortless. Whether you're seeking course information, registration guidance, or campus resources, Simurgh is your trusted ally on the path to academic success.
 
@@ -452,3 +454,8 @@ Project Link: [FUM-Simurgh](https://github.com/JavidChaji/FUM-Simurgh)
 [Product-Screenshot]: Images/SampleScreenshot.png
 
 [Product-URL]: .
+
+<!-- Exact Product -->
+[Exact-Product-Screenshot]: Images/ExactProductScreenshot.png
+
+[Exact-Product-URL]: .
