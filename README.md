@@ -449,6 +449,6 @@ Project Link: [FUM-Simurgh](https://github.com/JavidChaji/FUM-Simurgh)
 
 
 <!-- Product -->
-[Product-Screenshot]: Images/Screenshot.png
+[Product-Screenshot]: Images/SampleScreenshot.png
 
 [Product-URL]: .
